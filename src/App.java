@@ -105,55 +105,60 @@ public class App {
                                                        "\nO Dementador é capaz de sugar toda a sua energia vital...");
                                     System.out.println("-----------------------------------------------------------------------------------");
                                     p1Personagem.alterarEnergia(-70);                                   
-                                    System.out.println("Tenta novamente "+nome);
+                                    System.out.println("\nTenta novamente "+nome);
                                 }
                                 else{
                                     System.out.println("Opção inexistente, tente novamente");
                                 }
-
-
                             }                                                                    
                    
                         }
                         else if(confirmação2 == 2){
                             controle1 += 1;
                             System.out.println("-----------------------------------------------------------------------------------");
-                            System.out.println("Hmmmm, você escolheu estudar em uma escola particular.");
-                            System.out.println("Você estuda bastante para passar no Enem, e finalmente consegue!");
-                            System.out.println("Entretanto, por você ter estudado em uma escola particular, você não tem direito a uma bolsa remunerada do Estado");
-                            System.out.println("Logo, você precisa trabalhar por fora para conseguir se manter");
-                            System.out.println("Olha só... Aparceu uma vaga de emprego na sua àrea !! Você deseja se candidatar?");
+                            p1Personagem.alterarEnergia(-30);
+                            System.out.println("-----------------------------------------------------------------------------------");
+                            System.out.println("CHAPTER 2");
+                            System.out.println("\nVocê rejeitou a proposta de Harold e continua morando com seus tios e levando uma vida pacata"+
+                                               "\nEntretanto, agora você sabe que é um bruxo e isso não sai da sua cabeça...");
+                            System.out.println("Seus tios desejam fazer um passeio e te deixam sozinho em casa..."+
+                                               "\nAinda pensando sobre oq Harold falou,você resolve se testar..."+
+                                               "\nPara isso você tenta abrir a porta do seu quarto apenas com o pensamento, porém não consegue..."+
+                                               "\n\nVocê deseja tentar mais uma vez?");
                             var controle2 = 0;
                             while(controle2 == 0){
                                 System.out.println();
-                                System.out.println("Digite 1 para SIM  /// Digite 2 para NÃO");
+                                System.out.println("\nDigite 1 para SIM || Digite 2 para NÃO");
                                 var confirmação3 = ler.nextInt();
                                 if(confirmação3 == 1){
-                                    controle2 += 1;
-                                    System.out.println("-----------------------------------------------------------------------------------");
-                                    System.out.println("MARAVILHA ! Você se candidatou e conseguiu a vaga de emprego!");
-                                    System.out.println("Agora você trabalha e estuda ao mesmo tempo.");
-                                    System.out.println("Com muito esforço você consegue se formar!!");
-                                    System.out.println("Parabéns !!! a sua jornada até aqui foi determinada pelas suas escolhas!");
-                                    System.out.println("Fim de Jornada "+nome);
+                                    controle2 += 1;                                                                       
+                                    System.out.println("MARAVILHA ! Você conseguiu abrir a porta apenas com a força da mente"+
+                                                      "\nImpressionante! Mas e agora? o que você deve fazer?");
+                                    System.out.println("\n-----------------------------------------------------------------------------------");
+                                    p1Personagem.alterarMagia(5);
+                                    p1Personagem.status();
+                                    System.out.println("-----------------------------------------------------------------------------------");                   
+                                    System.out.println("Aguarde os próximos capítulos "+nome);
                                 }
                                 else if(confirmação3 == 2){
                                     controle2 += 1;
-                                    System.out.println("Infelizmente você não conseguiu se manter na faculdade...");
-                                    System.out.println("Infelizmente !!! a sua jornada até aqui foi determinada pelas suas escolhas!");
+                                    System.out.println("Infelizmente você não teve coragem de arriscar"+
+                                                      "\nSeus tios voltam do passeio, e você perdeu uma grande oportunidade sozinho"+
+                                                      "\nAgora já não tem mais jeito, você apenas continua a vida como um trouxa..."+
+                                                      "\nInfelizmente a sua jornada até aqui foi determinada pelas suas escolhas!");
+                                    System.out.println("\n-----------------------------------------------------------------------------------");
+                                    p1Personagem.alterarEnergia(-100);
+                                    p1Personagem.status();
+                                    System.out.println("-----------------------------------------------------------------------------------");
                                     System.out.println("Fim de Jornada "+nome);
                                 }
 
-                            }                                                  
-                                                   
-                          
+                            }                      
                         }
                         else{
                             System.out.println("Opção inexistente, tente novamente!");
                         }
-                    }
- 
-    
+                    }   
                 }
                 else if(confirmação == 2){
                     controle += 1;
