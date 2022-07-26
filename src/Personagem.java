@@ -10,9 +10,17 @@ public class Personagem {
     }
     void alterarEnergia(int alteração){
         this.energia = this.energia + alteração;
-        System.out.println("A energia de"+ this.nome + " foi modificada em"+ alteração+ " pontos"+
-                           "Agora sua energia é de:"+ this.energia +" Hp"
-        );        
+        System.out.println("A energia de "+ this.nome + " foi modificada em"+ alteração+ " pontos"+
+                           "\nAgora sua energia é de: "+ this.energia +" Hp"); 
+        if(this.energia > 100)
+        {
+            this.energia = 100;
+        }
+        else if(this.energia <= 0)
+        {
+            System.out.println("Infelizmente você não teve sorte no mundo mágico e acabou morrendo... Fim da jornada para "+this.nome);
+        }
+
     }
     void alterarMagia(int alteração){
         this.magia = this.magia + alteração;
@@ -20,5 +28,9 @@ public class Personagem {
                            "\nAgora sua magia é de:"+ this.magia +" Powers"
         );   
     }
+    void status(){
+        System.out.println(this.nome + " | Energia: " + this.energia + "| Magia: " + this.magia);
+    }
+
 }
 
