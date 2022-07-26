@@ -31,21 +31,40 @@ public class App {
                     System.out.println("Que maravilha !!!");
                     var controle1 = 0;
                     System.out.println("-----------------------------------------------------------------------------------");
-                    System.out.println("Você acaba de acordar em meio a um caos, você mora com seus tios e seu primo, entretanto a sua relação" + 
+
+                    System.out.println("CHAPTER 1:");
+
+                    System.out.println("\nVocê acaba de acordar em meio a um caos, você mora com seus tios e seu primo, entretanto a sua relação" + 
                                        " com eles não é nada boa." + "\nAssim que você acordou, escutou barulho de corujas, e seus tios gritando sem entender" +
-                                       "o que estava acontecendo... \nVocê sai do quarto e se depara com um homem gigante, ele logo chama pelo seu" +
-                                       "seu nome...\n"                                                      
-                                       
-                    );                    
-                    System.out.println("A primeira, você tem a oportunidade de ir pra uma escola pública de referência.");                    
-                    System.out.println("A segunda, você tem a opção de estudar em um colégio particular famoso da sua cidade.");
+                                       " o que estava acontecendo... \nVocê sai do quarto e se depara com um homem gigante, ele logo chama pelo seu" +
+                                       " nome...\n");                                                 
+                    
+                    System.out.println("Qual será o nome do seu personagem?");
+                    var nomePersonagem = ler.next();
+                    Personagem p1Personagem = new Personagem(nomePersonagem , 70, 0);
+
+                    System.out.println("\n..."+ nomePersonagem + "\n Me chamo Harold, e sou da escola de mágia e Bruxaria de Hogwarts" +
+                                       "\n estou aqui para lhe fazer um convite, talvez você não saiba, mas você é um bruxo!" +
+                                       "\n... Você deseja vir comigo e estudar na escola de mágia e bruxaria de Hogwarts?"                   
+                    
+                    );
+
+                    System.out.println("\n-SIM");                    
+                    System.out.println("-NÃO");
                     System.out.println();
                     System.out.println("Digite 1 para PRIMEIRA opção || Digite 2 para SEGUNDA opção");
                     while(controle1 == 0){
                         var confirmação2 = ler.nextInt();
                         if(confirmação2 == 1){
                             controle1 += 1;
+
+                            System.out.println("\n-----------------------------------------------------------------------------------");
+                            System.out.println("Bye Bye tios chatos!! Agora a mágia está no ar !!!!");
+                            p1Personagem.alterarMagia(+10);
                             System.out.println("-----------------------------------------------------------------------------------");
+
+                            System.out.println("\nCHAPTER 2");                
+
                             System.out.println("Hmmm, por ter escolhido realizar o Ensino médio em uma escola pública de referência você");
                             System.out.println("tem direito uma bolsa remunerada do Estado ao entrar na faculdade.");        
                             System.out.println("Com dinheiro no bolso, você consegue focar apenas nos estudos");
