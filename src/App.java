@@ -1,5 +1,9 @@
 import java.util.Scanner;
 public class App {
+    /**
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         Scanner ler = new Scanner(System.in);
 
@@ -16,8 +20,10 @@ public class App {
 
         // if para acesso ao sistema. > 18
 
-        if(idade>=18){
+        if(idade>=18)
+         {
             System.out.println("Hmmm, interessante! Vejo você já é maior de idade, então pode traçar suas próprias escolhas !");
+         }
 
             // Loop até escolher uma opção válida.
             
@@ -27,8 +33,7 @@ public class App {
 
                 if(confirmação == 1)
                 {                    
-                    System.out.println("Que maravilha !!!");
-                    var controle1 = 0;
+                    System.out.println("Que maravilha !!!");                    
 
                     // Começo da História 
                     // Cap1                   
@@ -57,11 +62,11 @@ public class App {
                     // Declarando e mostrando capítulo
 
                     Capitulos chapter1v1 = new Capitulos();
-                    chapter1v1.Capitulo(cap1, texto1cap1v1 + texto2cap1v1, escolha1, escolha2, p1Personagem, 0,10);
+                    chapter1v1.Capitulo(cap1, texto1cap1v1 + texto2cap1v1, escolha1, escolha2, p1Personagem, 0,0);
                     chapter1v1.mostrar();
-                    int escolha = confirmação0.escolher();
+                    confirmação0.escolher();
                     
-                        if(escolha == 1)
+                        if(confirmação == 1)
                         {                            
                             System.out.println("\n-----------------------------------------------------------------------------------");
                             System.out.println("Bye Bye tios chatos!! Agora a mágia está no ar !!!!");
@@ -79,7 +84,7 @@ public class App {
                                                   "\nApós algumas tentativas, você também começa a desenvolver suas habilidades!!"+
                                                   "\nAlém disso tudo, ela lhe oferece um chocolate mágico que recarrega a sua energia!";
                             Capitulos chapter2v1 = new Capitulos();
-                            chapter2v1.Capitulo(cap2, texto1cap2v1 + texto2cap2v1, escolha1, escolha2, p1Personagem, 0, 0);
+                            chapter2v1.Capitulo(cap2, texto1cap2v1 + texto2cap2v1, escolha1, escolha2, p1Personagem, 0,0);
                             chapter2v1.mostrar(); 
 
                             System.out.println("\n-----------------------------------------------------------------------------------");
@@ -92,7 +97,7 @@ public class App {
                             System.out.println("Aguarde os próximos capítulos! "+nome);                                         
                    
                          } 
-                        else if(escolha == 2)
+                        else if(confirmação == 2)
                         {
                             // Declarando e mostrando o capitulo 2v2
 
@@ -106,25 +111,10 @@ public class App {
                             Capitulos chapter2v2 = new Capitulos();
                             chapter2v2.Capitulo(cap2, texto1cap2v2 + texto2cap2v2 ,escolha1 , escolha2, p1Personagem,  0, 0);
                             chapter2v2.mostrar();
-
-                            System.out.println("-----------------------------------------------------------------------------------");
-                            p1Personagem.alterarEnergia(-30);
-                            System.out.println("-----------------------------------------------------------------------------------");
                             
-                            // System.out.println("CHAPTER 2:");
-                            // System.out.println("\nVocê rejeitou a proposta de Harold e continua morando com seus tios e levando uma vida pacata"+
-                            //                    "\nEntretanto, agora você sabe que é um bruxo e isso não sai da sua cabeça...");
-                            // System.out.println("Seus tios desejam fazer um passeio e te deixam sozinho em casa..."+
-                            //                    "\nAinda pensando sobre oq Harold falou,você resolve se testar..."+
-                            //                    "\nPara isso você tenta abrir a porta do seu quarto apenas com o pensamento, porém não consegue..."+
-                            //                    "\n\nVocê deseja tentar mais uma vez?");
-                            var controle2 = 0;
-                            while(controle2 == 0){
-                                System.out.println();
-                                System.out.println("\nDigite 1 para SIM || Digite 2 para NÃO");
-                                var confirmação3 = ler.nextInt();
-                                if(confirmação3 == 1){
-                                    controle2 += 1;                                                                       
+                           int escolhax = confirmação0.escolher();                           
+                                if(escolhax == 1)
+                                {                                                                                                       
                                     System.out.println("MARAVILHA ! Você conseguiu abrir a porta apenas com a força da mente"+
                                                       "\nImpressionante! Mas e agora? o que você deve fazer?");
                                     System.out.println("\n-----------------------------------------------------------------------------------");
@@ -133,8 +123,8 @@ public class App {
                                     System.out.println("-----------------------------------------------------------------------------------");                   
                                     System.out.println("Aguarde os próximos capítulos "+nome);
                                 }
-                                else if(confirmação3 == 2){
-                                    controle2 += 1;
+                                else if(escolhax == 2)
+                                {                                   
                                     System.out.println("Infelizmente você não teve coragem de arriscar"+
                                                       "\nSeus tios voltam do passeio, e você perdeu uma grande oportunidade sozinho"+
                                                       "\nAgora já não tem mais jeito, você apenas continua a vida como um trouxa..."+
@@ -146,30 +136,16 @@ public class App {
                                     System.out.println("Fim de Jornada "+nome);
                                 }
 
-                            }                      
-                        }
-                        else{
-                            System.out.println("Opção inexistente, tente novamente!");
-                        }
+                            }                     
+                        
                     }   
                 }
-                else if(confirmação == 2)
-                {                 
-                    System.out.println("Que pena, você está perdendo uma ótima aventura ! Até a próxima "+nome);               
-       
-                }
-                else{
-                    System.out.println("Opção inexistente, tente novamente !");
-                }
-
-            }
-                      
-    
-        }
-       else{
-           System.out.println("Infelizmente você não pode traçar suas próprias escolhas");
-           System.out.println("Volte quando você completar 18 anos "+nome+" ! :)");    
-         }
-     ler.close();        
-    }
+             //   else if(confirmação == 2)
+             //   {                 
+             //       System.out.println("Que pena, você está perdendo uma ótima aventura ! Até a próxima "+nome);
+             //   }
+      
+        
+            
+          
 }
