@@ -30,28 +30,27 @@ public class App {
                     controle += 1;
                     System.out.println("Que maravilha !!!");
                     var controle1 = 0;
+
+                    // Começo da História
+
                     System.out.println("-----------------------------------------------------------------------------------");
-
-                    System.out.println("CHAPTER 1:");
-
-                    System.out.println("\nVocê acaba de acordar em meio a um caos, você mora com seus tios e seu primo, entretanto a sua relação" + 
-                                       " com eles não é nada boa." + "\nAssim que você acordou, escutou barulho de corujas, e seus tios gritando sem entender" +
-                                       " o que estava acontecendo... \nVocê sai do quarto e se depara com um homem gigante, ele logo chama pelo seu" +
-                                       " nome...\n");                                                 
-                    
                     System.out.println("Qual será o nome do seu personagem?");
                     var nomePersonagem = ler.next();
                     Personagem p1Personagem = new Personagem(nomePersonagem , 70, 0);
-
+                    Capitulos chapter1 = new Capitulo("Chapter 1", 
+                                                     "\nVocê acaba de acordar em meio a um caos, você mora com seus tios e seu primo, entretanto a sua relação" + 
+                                                     " com eles não é nada boa." + "\nAssim que você acordou, escutou barulho de corujas, e seus tios gritando sem entender" +
+                                                     " o que estava acontecendo... \nVocê sai do quarto e se depara com um homem gigante, ele logo chama pelo seu" +
+                                                     " nome...\n" +
+                                                     "\n..."+ nomePersonagem + "\n Me chamo Harold, e sou da escola de mágia e Bruxaria de Hogwarts" +
+                                                     "\n estou aqui para lhe fazer um convite, talvez você não saiba, mas você é um bruxo!" +
+                                                     "\n... Você deseja vir comigo e estudar na escola de mágia e bruxaria de Hogwarts?",
+                                                      1 ,
+                                                      2 ,
+                                                      0 );
                     System.out.println("-----------------------------------------------------------------------------------");
                     p1Personagem.status();
-                    System.out.println("-----------------------------------------------------------------------------------");
-
-                    System.out.println("\n..."+ nomePersonagem + "\n Me chamo Harold, e sou da escola de mágia e Bruxaria de Hogwarts" +
-                                       "\n estou aqui para lhe fazer um convite, talvez você não saiba, mas você é um bruxo!" +
-                                       "\n... Você deseja vir comigo e estudar na escola de mágia e bruxaria de Hogwarts?"                   
-                    
-                    );                                     
+                    System.out.println("-----------------------------------------------------------------------------------");                                          
                     
                     System.out.println("\nDigite 1 para SIM || Digite 2 para NÃO");
                     while(controle1 == 0){

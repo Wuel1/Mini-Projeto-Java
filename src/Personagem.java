@@ -3,12 +3,14 @@ public class Personagem {
     int energia;
     int magia;
 
-    Personagem(String nome, int energia, int magia){
+    Personagem(String nome, int energia, int magia)
+    {
         this.nome = nome;
         this.energia = energia;
         this.magia = magia;
     }
-    void alterarEnergia(int alteração){
+    void alterarEnergia(int alteração)
+    {
         this.energia = this.energia + alteração;
         System.out.println("A energia de "+ this.nome + " foi modificada em "+ alteração+ " pontos"+
                            "\nAgora sua energia é de: "+ this.energia +" Hp"); 
@@ -22,13 +24,15 @@ public class Personagem {
         }
 
     }
-    void alterarMagia(int alteração){
+    void alterarMagia(int alteração)
+    {
         this.magia = this.magia + alteração;
         System.out.println("A magia de "+ this.nome + " foi modificada em "+ alteração+ " pontos"+
                            "\nAgora sua magia é de: "+ this.magia +" Powers"
         );   
     }
-    void status(){
+    void status()
+    {
         System.out.println(this.nome + " | Energia: " + this.energia + "| Magia: " + this.magia);
     }
 
