@@ -118,7 +118,7 @@ public class App {
                             System.out.println("-----------------------------------------------------------------------------------");
                             p1Personagem.alterarEnergia(-30);
                             System.out.println("-----------------------------------------------------------------------------------");
-                            System.out.println("CHAPTER 2");
+                            System.out.println("CHAPTER 2:");
                             System.out.println("\nVocê rejeitou a proposta de Harold e continua morando com seus tios e levando uma vida pacata"+
                                                "\nEntretanto, agora você sabe que é um bruxo e isso não sai da sua cabeça...");
                             System.out.println("Seus tios desejam fazer um passeio e te deixam sozinho em casa..."+
