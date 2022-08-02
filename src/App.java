@@ -1,10 +1,6 @@
 import java.util.Scanner;
 public class App {
-    /**
-     * @param args
-     * @throws Exception
-     */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Scanner ler = new Scanner(System.in);
 
         // Lendo o nome do usuário.
@@ -16,7 +12,7 @@ public class App {
         // Lendo a idade do usuário.
 
         System.out.println("Primeiramente, nos informe a sua idade: ");
-        var idade = ler.nextInt();
+        var idade = ler.nextInt();        
 
         // if para acesso ao sistema. > 18
 
@@ -40,7 +36,7 @@ public class App {
 
                     System.out.println("-----------------------------------------------------------------------------------");
                     System.out.println("Qual será o nome do seu personagem?");
-                    var nomePersonagem = ler.next();
+                    var nomePersonagem = ler.nextLine();
                     Personagem p1Personagem = new Personagem(nomePersonagem , 70, 0);
                     System.out.println("-----------------------------------------------------------------------------------");
                     p1Personagem.status();
@@ -144,8 +140,6 @@ public class App {
              //   {                 
              //       System.out.println("Que pena, você está perdendo uma ótima aventura ! Até a próxima "+nome);
              //   }
-      
-        
-            
-          
+   //
+   // ler.close();      
 }
