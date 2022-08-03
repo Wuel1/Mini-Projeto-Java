@@ -9,25 +9,30 @@ public class Escolhas
 
         while(this.escolha == -1)
         {
-           Scanner ler = new Scanner(System.in);
+           Scanner input = new Scanner(System.in);
            System.out.println("\nDigite 1 para Sim || Digite 2 para Não ");
-           int confirmação = ler.nextInt();
+           var confirmação = input.nextInt();
+            
            if(confirmação == 1)
            {
+
             this.escolha = 1;
-            ler.close();
+            input.close();
            }
-           else if(confirmação == 2)
+
+            else if(confirmação == 2)
+
            {
+
             this.escolha = 2;
-            ler.close();
+            input.close();           
            }
-           else
+             else
            {
             System.out.println("Tente novamente, opção invalida");
-            ler.close();
+            input.close();         
            }
-           ler.close();
+           
         }          
        // System.out.println(this.escolha);
         return this.escolha;

@@ -13,7 +13,7 @@ public class App {
 
         System.out.println("Primeiramente, nos informe a sua idade: ");
         var idade = ler.nextInt();        
-
+        
         // if para acesso ao sistema. > 18
 
         if(idade>=18)
@@ -29,7 +29,7 @@ public class App {
 
                 if(confirmação == 1)
                 {                    
-                    System.out.println("Que maravilha !!!");                    
+                    System.out.println("Que maravilha !!!");                                   
 
                     // Começo da História 
                     // Cap1                   
