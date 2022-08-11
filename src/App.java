@@ -25,7 +25,7 @@ public class App {
             
             System.out.println("Deseja começar?");
             Escolhas confirmação0 = new Escolhas();
-            int confirmação = confirmação0.escolher();
+            int confirmação = confirmação0.escolher(ler);
 
                 if(confirmação == 1)
                 {                    
@@ -36,7 +36,7 @@ public class App {
 
                     System.out.println("-----------------------------------------------------------------------------------");
                     System.out.println("Qual será o nome do seu personagem?");
-                    var nomePersonagem = ler.nextLine();
+                    var nomePersonagem = ler.next();
                     Personagem p1Personagem = new Personagem(nomePersonagem , 70, 0);
                     System.out.println("-----------------------------------------------------------------------------------");
                     p1Personagem.status();
@@ -60,7 +60,7 @@ public class App {
                     Capitulos chapter1v1 = new Capitulos();
                     chapter1v1.Capitulo(cap1, texto1cap1v1 + texto2cap1v1, escolha1, escolha2, p1Personagem, 0,0);
                     chapter1v1.mostrar();
-                    confirmação0.escolher();
+                    confirmação0.escolher(ler);
                     
                         if(confirmação == 1)
                         {                            
@@ -108,7 +108,7 @@ public class App {
                             chapter2v2.Capitulo(cap2, texto1cap2v2 + texto2cap2v2 ,escolha1 , escolha2, p1Personagem,  0, 0);
                             chapter2v2.mostrar();
                             
-                           int escolhax = confirmação0.escolher();                           
+                           int escolhax = confirmação0.escolher(ler);                           
                                 if(escolhax == 1)
                                 {                                                                                                       
                                     System.out.println("MARAVILHA ! Você conseguiu abrir a porta apenas com a força da mente"+
