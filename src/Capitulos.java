@@ -29,18 +29,24 @@ public class Capitulos {
     void mostrar()
     {
         System.out.println(this.nome);
-        System.out.println(this.texto);
-        this.personagem.alterarEnergia(this.alterarEnergia);
-        this.personagem.alterarMagia(this.alterarMagia);
+        System.out.println(this.texto);      
         
         if(escolhas != null)
         {
+            System.out.println("\n");    
             for (String escolhas : escolhas) 
             {
-                System.out.println(escolhas);    
+                System.out.println("-" + escolhas);    
             }
 
         }
+        else
+        {
+            System.out.println("\nEsse capítulo não possuem escolhas...");
+        }
+
+        this.personagem.alterarEnergia(this.alterarEnergia);
+        this.personagem.alterarMagia(this.alterarMagia);
 
     }
   

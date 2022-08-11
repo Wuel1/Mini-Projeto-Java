@@ -33,8 +33,8 @@ public class Escolhas
            }
            
         }          
-       // System.out.println(this.escolha);
-        return this.escolha;
+       
+        return this.escolha;        
     }
     
 }

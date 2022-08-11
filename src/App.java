@@ -50,7 +50,7 @@ public class App {
                     Capitulos chapter1v1 = new Capitulos();
                     chapter1v1.Capitulo(cap1, texto1cap1v1 + texto2cap1v1 , escolhascap1 ,  p1Personagem, 0,0);
                     chapter1v1.mostrar();
-                    confirmação0.escolher(ler);
+                    confirmação = confirmação0.escolher(ler);
                     
                         if(confirmação == 1)
                         {                            
@@ -60,7 +60,7 @@ public class App {
                             p1Personagem.status();
                             System.out.println("-----------------------------------------------------------------------------------");
 
-                            // Declarando e mostrando capítulo 2v1
+                            // Declarando e mostrando capítulo 2v1                            
                             
                             Personagem Hermione = new Personagem("Hermione", 100, 40);
                             String cap2 = "Chapter 2";
@@ -68,14 +68,13 @@ public class App {
                                                   "\nNele você encontra uma menina, e logo descobre o nome dela...";
                             String texto2cap2v1 = "\nVocês conversam muito, e vê que ela é muito inteligente e já domina algumas mágias..."+
                                                   "\nApós algumas tentativas, você também começa a desenvolver suas habilidades!!"+
-                                                  "\nAlém disso tudo, ela lhe oferece um chocolate mágico que pode recarregar a sua energia!"+
-                                                  "\nVocê deseja aceitar?";
-                            String[] escolhascap2v1 = new String[2];
-                            escolhascap2v1[0] = "Aceitar chocolate";
-                            escolhascap2v1[1] = "Rejeitar chocolate";
+                                                  "\nAlém disso tudo, ela lhe oferece um chocolate mágico que pode recarregar a sua energia!";                                                  
+                            //String[] escolhascap2v1 = new String[2];
+                            //escolhascap2v1[0] = "Aceitar chocolate";
+                            //escolhascap2v1[1] = "Rejeitar chocolate";
 
                             Capitulos chapter2v1 = new Capitulos();
-                            chapter2v1.Capitulo(cap2, texto1cap2v1 + texto2cap2v1, escolhascap2v1 , p1Personagem, 0,0);
+                            chapter2v1.Capitulo(cap2, texto1cap2v1 + texto2cap2v1, null , p1Personagem, 0,0);
                             chapter2v1.mostrar(); 
 
                             System.out.println("\n-----------------------------------------------------------------------------------");
@@ -92,6 +91,7 @@ public class App {
                         {
                             // Declarando e mostrando o capitulo 2v2
 
+                            System.out.println("-----------------------------------------------------------------------------------");
                             String cap2 = "Chapter 2";
                             String texto1cap2v2 = "\nVocê rejeitou a proposta de Harold e continua morando com seus tios e levando uma vida pacata"+
                                                   "\nEntretanto, agora você sabe que é um bruxo e isso não sai da sua cabeça...";
@@ -105,12 +105,12 @@ public class App {
 
                             Capitulos chapter2v2 = new Capitulos();
                             chapter2v2.Capitulo(cap2, texto1cap2v2 + texto2cap2v2 , escolhascap2v2 , p1Personagem,  0, 0);
-                            chapter2v2.mostrar();
-                            
-                           int escolhax = confirmação0.escolher(ler);                           
-                                if(escolhax == 1)
+                            chapter2v2.mostrar();                            
+                            confirmação = confirmação0.escolher(ler);   
+
+                                if(confirmação == 1)
                                 {                                                                                                       
-                                    System.out.println("MARAVILHA ! Você conseguiu abrir a porta apenas com a força da mente"+
+                                    System.out.println("\nMARAVILHA ! Você conseguiu abrir a porta apenas com a força da mente"+
                                                       "\nImpressionante! Mas e agora? o que você deve fazer?");
                                     System.out.println("\n-----------------------------------------------------------------------------------");
                                     p1Personagem.alterarMagia(5);
@@ -118,9 +118,9 @@ public class App {
                                     System.out.println("-----------------------------------------------------------------------------------");                   
                                     System.out.println("Aguarde os próximos capítulos "+nome);
                                 }
-                                else if(escolhax == 2)
+                                else if(confirmação == 2)
                                 {                                   
-                                    System.out.println("Infelizmente você não teve coragem de arriscar"+
+                                    System.out.println("\nInfelizmente você não teve coragem de arriscar"+
                                                       "\nSeus tios voltam do passeio, e você perdeu uma grande oportunidade sozinho"+
                                                       "\nAgora já não tem mais jeito, você apenas continua a vida como um trouxa..."+
                                                       "\nInfelizmente a sua jornada até aqui foi determinada pelas suas escolhas!");
@@ -133,7 +133,11 @@ public class App {
 
                             }                     
                         
-                    }   
-                }
+                    }
+                    else
+                    {
+                     System.out.println("Que pena, você está perdendo uma ótima aventura!");
+                    }    
+                }             
    
 }
