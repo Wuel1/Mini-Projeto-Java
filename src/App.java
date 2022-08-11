@@ -7,23 +7,13 @@ public class App {
 
         System.out.println("Olá !! Primeiramente, qual seu nome ?");
         var nome = ler.nextLine();
-        System.out.println("Seja Bem vindo "+nome+"! Vamos começar a nossa aventura?" );
-
-        // Lendo a idade do usuário.
-
-        System.out.println("Primeiramente, nos informe a sua idade: ");
-        var idade = ler.nextInt();        
-        
-        // if para acesso ao sistema. > 18
-
-        if(idade>=18)
-         {
-            System.out.println("Hmmm, interessante! Vejo você já é maior de idade, então pode traçar suas próprias escolhas !");
-         }
-
+        System.out.println("Seja Bem vindo "+nome+"! Vamos começar a nossa aventura?" ); 
+                
             // Loop até escolher uma opção válida.
             
             System.out.println("Deseja começar?");
+            System.out.println("\n-Sim");
+            System.out.println("-Não");
             Escolhas confirmação0 = new Escolhas();
             int confirmação = confirmação0.escolher(ler);
 
@@ -42,7 +32,7 @@ public class App {
                     p1Personagem.status();
                     System.out.println("-----------------------------------------------------------------------------------");
 
-                    // Variavéis do Cap 1
+                    // Declarando variáveis do Cap 1
 
                     String cap1 = "Chapter 1";
                     String texto1cap1v1 = "\nVocê acaba de acordar em meio a um caos, você mora com seus tios e seu primo, entretanto a sua relação" + 
@@ -52,13 +42,13 @@ public class App {
                     String texto2cap1v1 = "\n..."+ nomePersonagem + "\n Me chamo Harold, e sou da escola de mágia e Bruxaria de Hogwarts" +
                                           "\n estou aqui para lhe fazer um convite, talvez você não saiba, mas você é um bruxo!" +
                                           "\n... Você deseja vir comigo e estudar na escola de mágia e bruxaria de Hogwarts?"; 
-                    int escolha1 = 1;
-                    int escolha2 = 2;
+                    String[] escolhascap1 = new String[2];
+                    escolhascap1[0] = "Ir para Hogwarts";
+                    escolhascap1[1] = "Fica com os tios";
 
-                    // Declarando e mostrando capítulo
-
+                    // Criando e mostrando capítulo 1                   
                     Capitulos chapter1v1 = new Capitulos();
-                    chapter1v1.Capitulo(cap1, texto1cap1v1 + texto2cap1v1, escolha1, escolha2, p1Personagem, 0,0);
+                    chapter1v1.Capitulo(cap1, texto1cap1v1 + texto2cap1v1 , escolhascap1 ,  p1Personagem, 0,0);
                     chapter1v1.mostrar();
                     confirmação0.escolher(ler);
                     
@@ -78,9 +68,14 @@ public class App {
                                                   "\nNele você encontra uma menina, e logo descobre o nome dela...";
                             String texto2cap2v1 = "\nVocês conversam muito, e vê que ela é muito inteligente e já domina algumas mágias..."+
                                                   "\nApós algumas tentativas, você também começa a desenvolver suas habilidades!!"+
-                                                  "\nAlém disso tudo, ela lhe oferece um chocolate mágico que recarrega a sua energia!";
+                                                  "\nAlém disso tudo, ela lhe oferece um chocolate mágico que pode recarregar a sua energia!"+
+                                                  "\nVocê deseja aceitar?";
+                            String[] escolhascap2v1 = new String[2];
+                            escolhascap2v1[0] = "Aceitar chocolate";
+                            escolhascap2v1[1] = "Rejeitar chocolate";
+
                             Capitulos chapter2v1 = new Capitulos();
-                            chapter2v1.Capitulo(cap2, texto1cap2v1 + texto2cap2v1, escolha1, escolha2, p1Personagem, 0,0);
+                            chapter2v1.Capitulo(cap2, texto1cap2v1 + texto2cap2v1, escolhascap2v1 , p1Personagem, 0,0);
                             chapter2v1.mostrar(); 
 
                             System.out.println("\n-----------------------------------------------------------------------------------");
@@ -104,8 +99,12 @@ public class App {
                                                   "\nAinda pensando sobre oq Harold falou,você resolve se testar..."+
                                                   "\nPara isso você tenta abrir a porta do seu quarto apenas com o pensamento, porém não consegue..."+
                                                   "\n\nVocê deseja tentar mais uma vez?";
+                            String[] escolhascap2v2 = new String[2];
+                            escolhascap2v2[0] = "Tentar abrir a porta mais um vez";
+                            escolhascap2v2[1] = "Não tentar abrir mais";
+
                             Capitulos chapter2v2 = new Capitulos();
-                            chapter2v2.Capitulo(cap2, texto1cap2v2 + texto2cap2v2 ,escolha1 , escolha2, p1Personagem,  0, 0);
+                            chapter2v2.Capitulo(cap2, texto1cap2v2 + texto2cap2v2 , escolhascap2v2 , p1Personagem,  0, 0);
                             chapter2v2.mostrar();
                             
                            int escolhax = confirmação0.escolher(ler);                           
@@ -136,10 +135,5 @@ public class App {
                         
                     }   
                 }
-             //   else if(confirmação == 2)
-             //   {                 
-             //       System.out.println("Que pena, você está perdendo uma ótima aventura ! Até a próxima "+nome);
-             //   }
-   //
-   // ler.close();      
+   
 }

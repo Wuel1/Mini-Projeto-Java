@@ -9,7 +9,7 @@ public class Escolhas
 
         while(this.escolha == -1)
         {             
-           System.out.println("\nDigite 1 para Sim || Digite 2 para Não ");
+           System.out.println("\nDigite 1 para Primeira escolha || Digite 2 para Segunda escolha ");
            var confirmação = lerScanner.nextInt();
             
            if(confirmação == 1)

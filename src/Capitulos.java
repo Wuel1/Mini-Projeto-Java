@@ -3,16 +3,14 @@
 public class Capitulos {
     String nome;
     String texto;
-    int escolha1;
-    int escolha2;
+    String[] escolhas;    
     Personagem personagem;
     int alterarEnergia;
     int alterarMagia;
 
     void Capitulo(String nome,
                     String texto,
-                    int escolha1,
-                    int escolha2,
+                    String[] escolhas,                    
                     Personagem personagem,
                     int alterarEnergia,
                     int alterarMagia)   
@@ -21,8 +19,7 @@ public class Capitulos {
 
         this.nome = nome;
         this.texto = texto;
-        this.escolha1 = escolha1;
-        this.escolha2 = escolha2;
+        this.escolhas = escolhas;       
         this.personagem = personagem;
         this.alterarEnergia = alterarEnergia;
         this.alterarMagia = alterarMagia;
@@ -34,33 +31,17 @@ public class Capitulos {
         System.out.println(this.nome);
         System.out.println(this.texto);
         this.personagem.alterarEnergia(this.alterarEnergia);
-        this.personagem.alterarMagia(this.alterarMagia);   
+        this.personagem.alterarMagia(this.alterarMagia);
+        
+        if(escolhas != null)
+        {
+            for (String escolhas : escolhas) 
+            {
+                System.out.println(escolhas);    
+            }
+
+        }
 
     }
-    // int escolher()
-    // {
-    //     int escolha = -1;
-
-    //     while(escolha == -1)
-    //     {
-    //        Scanner ler = new Scanner(System.in);
-    //        System.out.println("\nDigite 1  || Digite 2 ");
-    //        var confirmação = ler.nextInt();
-    //        if(confirmação == 1)
-    //        {
-    //         escolha = 1;
-    //        }
-    //        else if(confirmação == 2)
-    //        {
-    //         escolha = 2;
-    //        }
-    //        else
-    //        {
-    //         System.out.println("Tente novamente, opção invalida");
-    //        }
-    //        ler.close();
-    //     }
-            
-    //     return escolha;
-    // }
+  
 }
