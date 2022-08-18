@@ -12,8 +12,8 @@ public class Personagem {
     void alterarEnergia(int alteração)
     {
         this.energia = this.energia + alteração;
-        System.out.println("\nA energia de "+ this.nome + " foi modificada em "+ alteração+ " pontos"+
-                           "\nAgora sua energia é de: "+ this.energia +" Hp"); 
+      //  System.out.println("\nA energia de "+ this.nome + " foi modificada em "+ alteração+ " pontos"+
+      //                     "\nAgora sua energia é de: "+ this.energia +" Hp"); 
         if(this.energia > 100)
        {
             this.energia = 100;
@@ -28,8 +28,8 @@ public class Personagem {
     {
         this.magia = this.magia + alteração;
         
-        System.out.println("\nA magia de "+ this.nome + " foi modificada em "+ alteração+ " pontos"+
-                           "\nAgora sua magia é de: "+ this.magia +" Powers");   
+       // System.out.println("\nA magia de "+ this.nome + " foi modificada em "+ alteração+ " pontos"+
+       //                    "\nAgora sua magia é de: "+ this.magia +" Powers");   
     }
     void status()
     {

@@ -43,7 +43,8 @@ public class Capitulos {
         }
         else
         {
-            System.out.println("\nEsse capítulo não possuem escolhas...");
+            System.out.println("\nEsse capítulo não possue escolhas...");
+            System.out.println("Aperte Enter para contínuar");
         }
 
         this.personagem.alterarEnergia(this.alterarEnergia);
