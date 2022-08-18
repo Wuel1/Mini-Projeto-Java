@@ -28,12 +28,13 @@ public class Capitulos {
 
     void mostrar()
     {
+      System.out.println("----------------------------------------------------------------------");
         System.out.println(this.nome);
         System.out.println(this.texto);      
         
         if(escolhas != null)
         {
-            //System.out.println("\n");    
+            System.out.println("\n");    
             for (String escolhas : escolhas) 
             {
                 System.out.println("-" + escolhas);    
@@ -47,6 +48,7 @@ public class Capitulos {
 
         this.personagem.alterarEnergia(this.alterarEnergia);
         this.personagem.alterarMagia(this.alterarMagia);
+      System.out.println("----------------------------------------------------------------------");
 
     }
   

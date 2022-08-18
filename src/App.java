@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args)
     {
-      System.out.println("----------------------------------------------------------------------");
+      
       Scanner ler = new Scanner(System.in);
       //////// Personagens
 
       Personagem Harry = new Personagem("Harry", 100, 0);
-      Personagem Hermione = new Personagem("Hermione", 100, 30);
-      Personagem Ronald = new Personagem("Ronald Weasley", 70, 0);
+    //  Personagem Hermione = new Personagem("Hermione", 100, 30);
+    //  Personagem Ronald = new Personagem("Ronald Weasley", 70, 0);
 
       //////// Capítulo 0       
 
@@ -25,31 +25,49 @@ public class App {
       Capitulo0.mostrar();
 
       //////// Capítulo 1
-
+      
       String NomeCapitulo1 = "Uma vida desprezível";
-      String TextoCapitulo1 = "";
+      String TextoCapitulo1 = "\nVocê acaba de acordar em meio ao caos... Você mora com seus tios, entretanto a sua relação"+
+                              "\ncom eles não é nada boa. Você escuta barulho de vários papéis se batendo, e logo após os seus"+
+                              "\ntios começam a gritar o seu nome em tom de enfurecimento..."+
+                              "\n\n~HARRY POTTEEER !!!!"+
+                              "\n\nVocê sai do quarto e já é puxado pela orelha pelo seu tio em direção a sala"+
+                              "\nAo chegar na sala vocês dois tem uma surpresa... Um homem alto e forte está entrando"+
+                              "\nEle se chama Harold, ele veio lhe convidar pra fazer parte da escola de Bruxária de"+
+                              "\nHogwarts...";
       String[] escolhascap1 = new String[2];
-      escolhascap1[0] = "";
-      escolhascap1[1] = "";
+      escolhascap1[0] = "Continuar morando com os tios";
+      escolhascap1[1] = "Aceitar a proposta e ir embora";
       Capitulos Capitulo1 = new Capitulos();
-
+      Capitulo1.Capitulo(NomeCapitulo1, TextoCapitulo1, escolhascap1, Harry, 0, 0);
+      Capitulo1.mostrar();
+      
      //////// Capítulo 2
 
-      String NomeCapitulo2 = "";
-      String TextoCapitulo2 = "";
+      String NomeCapitulo2 = "MAGIA!";
+      String TextoCapitulo2 = "\nVocê aceitou ir para Hogwarts com Harold!"+
+                              "\nPorém, para isso você precisa ter o seu matérial mágico, não é mesmo?"+
+                              "\nVocês partem rumo a compra desses matériais..."+
+                              "\n\n-Mas espera ai, eu não tenho dinheiro Harold... ~Disse Harry"+
+                              "\n\n-Você que pensa Potter, você que pensa! Antes dos seus pais morrerem"+
+                              "\nlhe deixaram uma grande quantidade de dinheiro no banco, e é lá que vamos agora! ~Harold";
       String[] escolhascap2 = new String[2];
-      escolhascap2[0] = "";
-      escolhascap2[1] = "";
+      escolhascap2[0] = "Ficar Surpreso";
+      escolhascap2[1] = "Duvidar";
       Capitulos Capitulo2 = new Capitulos();
+      Capitulo2.Capitulo(NomeCapitulo2, TextoCapitulo2, escolhascap2, Harry, 0, 10);
+      Capitulo2.mostrar();  
 
       /////// Capitulo 3
 
-      String NomeCapitulo3 = "";
+      String NomeCapitulo3 = "Incerteza...";
       String TextoCapitulo3 = "";
       String[] escolhascap3 = new String[2];
       escolhascap3[0] = "";
       escolhascap3[1] = "";
       Capitulos Capitulo3 = new Capitulos();
+      Capitulo3.Capitulo(NomeCapitulo3, TextoCapitulo3, escolhascap3, Harry , 0, 0);
+
 
        /////// Capitulo 4
 
@@ -59,6 +77,8 @@ public class App {
        escolhascap4[0] = "";
        escolhascap4[1] = "";
        Capitulos Capitulo4 = new Capitulos();
+       Capitulo4.Capitulo(NomeCapitulo4, TextoCapitulo4, escolhascap4, Harry, 0, 0);
+
 
       /////// Capitulo 5
 
@@ -67,7 +87,9 @@ public class App {
       String[] escolhascap5 = new String[2];
       escolhascap5[0] = "";
       escolhascap5[1] = "";
-      Capitulos Capitulo = new Capitulos();
+      Capitulos Capitulo5 = new Capitulos();
+      Capitulo5.Capitulo(NomeCapitulo5, TextoCapitulo5, escolhascap5, Harry, 0, 0);
+
 
 
                                
