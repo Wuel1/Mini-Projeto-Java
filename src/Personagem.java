@@ -27,6 +27,7 @@ public class Personagem {
     void alterarMagia(int alteração)
     {
         this.magia = this.magia + alteração;
+        
         //System.out.println("\nA magia de "+ this.nome + " foi modificada em "+ alteração+ " pontos"+
         //                   "\nAgora sua magia é de: "+ this.magia +" Powers");   
     }

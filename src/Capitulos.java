@@ -33,7 +33,7 @@ public class Capitulos {
         
         if(escolhas != null)
         {
-            System.out.println("\n");    
+            //System.out.println("\n");    
             for (String escolhas : escolhas) 
             {
                 System.out.println("-" + escolhas);    
