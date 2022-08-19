@@ -16,13 +16,9 @@ public class App {
       String MensagemInicial = "\nOlá !! Seja bem vindo ao Mini Projeto !"+
                                "\nAqui você vai vai mergulhar em uma história de altas aventuras,"+
                                "\ne o melhor... Você quem decide seu caminho!"+
-                               "\n\nDeseja começar?";
-      String[] escolhascap0 = new String[2];
-      escolhascap0[0] = "Sim";  
-      escolhascap0[1] = "Não";
+                               "\n\nDeseja começar?";            
       Capitulos Capitulo0 = new Capitulos();
-      Capitulo0.Capitulo(NomeCapitulo0,MensagemInicial,escolhascap0,Harry,0,0);
-      Capitulo0.mostrar();
+      Capitulo0.Capitulo(NomeCapitulo0,MensagemInicial,Harry,0,0,ler);      
 
       //////// Capítulo 1
       
@@ -34,13 +30,9 @@ public class App {
                               "\n\nVocê sai do quarto e já é puxado pela orelha pelo seu tio em direção a sala"+
                               "\nAo chegar na sala vocês dois tem uma surpresa... Um homem alto e forte está entrando"+
                               "\nEle se chama Harold, ele veio lhe convidar pra fazer parte da escola de Bruxária de"+
-                              "\nHogwarts...";
-      String[] escolhascap1 = new String[2];
-      escolhascap1[0] = "Continuar morando com os tios";
-      escolhascap1[1] = "Aceitar a proposta e ir embora";
+                              "\nHogwarts...";        
       Capitulos Capitulo1 = new Capitulos();
-      Capitulo1.Capitulo(NomeCapitulo1, TextoCapitulo1, escolhascap1, Harry, 0, 0);
-      Capitulo1.mostrar();
+      Capitulo1.Capitulo(NomeCapitulo1, TextoCapitulo1, Harry, 0, 0,ler);      
       
      //////// Capítulo 2
 
@@ -50,13 +42,9 @@ public class App {
                               "\nVocês partem rumo a compra desses matériais..."+
                               "\n\n-Mas espera ai, eu não tenho dinheiro Harold... ~Disse Harry"+
                               "\n\n-Você que pensa Potter, você que pensa! Antes dos seus pais morrerem"+
-                              "\nlhe deixaram uma grande quantidade de dinheiro no banco, e é lá que vamos agora! ~Harold";
-      String[] escolhascap2 = new String[2];
-      escolhascap2[0] = "";
-      escolhascap2[1] = "";
+                              "\nlhe deixaram uma grande quantidade de dinheiro no banco, e é lá que vamos agora! ~Harold";      
       Capitulos Capitulo2 = new Capitulos();
-      Capitulo2.Capitulo(NomeCapitulo2, TextoCapitulo2, null, Harry, 0, 0);
-      Capitulo2.mostrar();  
+      Capitulo2.Capitulo(NomeCapitulo2, TextoCapitulo2, Harry, 0, 0,ler);       
 
       /////// Capitulo 3
 
@@ -67,25 +55,19 @@ public class App {
                               "\nHarry começa a sentir a magia fluir em suas veias, coisa que nunca sentiu antes"+
                               "\nAliás... não sabia nem que existia!"+
                               "\n\nCerto dia no zoológico, ao olhar para uma cobra... ele começa a se comunicar com ela"+
-                              "\n\n-Isso não é normal, preciso tomar uma decisão!  ~Disse Harry";
-      String[] escolhascap3 = new String[2];
-      escolhascap3[0] = "Ir atrás de Harold e voltar atrás na decisão de ir pra Hogwarts";
-      escolhascap3[1] = "Ter medo de voltar atrás, e continuar com sua vida pacata.";
+                              "\n\n-Isso não é normal, preciso tomar uma decisão!  ~Disse Harry";            
       Capitulos Capitulo3 = new Capitulos();
-      Capitulo3.Capitulo(NomeCapitulo3, TextoCapitulo3, escolhascap3, Harry , 0, 0);
-      Capitulo3.mostrar();
+      Capitulo3.Capitulo(NomeCapitulo3, TextoCapitulo3, Harry , 0, 0,ler);
 
-
-       /////// Capitulo 4
+      /////// Capitulo 4
 
        String NomeCapitulo4 = "Descobrindo a Magia !";
-       String TextoCapitulo4 = "\nAo chegar no banco mágico";
-       String[] escolhascap4 = new String[2];
-       escolhascap4[0] = "";
-       escolhascap4[1] = "";
+       String TextoCapitulo4 = "\nAo chegar no banco mágico você se depara com anões... Mas não anões normais"+
+                               "\nAnões mágicos !!! Você se admira com a magia do banco, tudo é por meio de feitiços"+
+                               "\nAté a fechadura do seu cofre... Sim, você tem cofre!"+
+                               "\n\nApós capturar seu dinheiro no banco, você está pronto pra comprar todo o seu matérial !";       
        Capitulos Capitulo4 = new Capitulos();
-       Capitulo4.Capitulo(NomeCapitulo4, TextoCapitulo4, escolhascap4, Harry, 0, 0);
-
+       Capitulo4.Capitulo(NomeCapitulo4, TextoCapitulo4, Harry, 0, 0,ler);      
 
       /////// Capitulo 5
 
@@ -94,38 +76,75 @@ public class App {
                               "\nHarry manda uma carta pra Harold, e pouco tempo depois você recebe uma resposta..."+
                               "\nHArry vai poder ir pra Hogwats!!! Harry logo arruma suas malas, mesmo contra a vontade"+
                               "\ndos seus tios trouxas. Um carro mágico aparece em sua porta, e finalmente Harry vai embora"+
-                              "\nDa casa dos seus tios. MAGIA!";
-      String[] escolhascap5 = new String[2];
-      escolhascap5[0] = "";
-      escolhascap5[1] = "";
+                              "\nDa casa dos seus tios. MAGIA!";      
       Capitulos Capitulo5 = new Capitulos();
-      Capitulo5.Capitulo(NomeCapitulo5, TextoCapitulo5, null, Harry, 0, 0);
-      Capitulo5.mostrar();
+      Capitulo5.Capitulo(NomeCapitulo5, TextoCapitulo5, Harry, 0, 0,ler);     
 
       /////// Capitulo 6
 
       String NomeCapitulo6 = "Medo";
-      String TextoCapitulo6 = "";
-      String[] escolhascap6 = new String[2];
-      escolhascap6[0] = "";
-      escolhascap6[1] = "";
+      String TextoCapitulo6 = "\nEmbora sentir presente em você, você tem medo de assumi-lá!"+
+                              "\nAssim, Harry está fadado ao fracasso de nunca arriscar viver uma vida melhor"+
+                              "\ne continuar vivendo com os tios... Infeliz, incapaz e inseguro... :(";      
       Capitulos Capitulo6 = new Capitulos();
-      Capitulo6.Capitulo(NomeCapitulo6, TextoCapitulo6, escolhascap6, Harry, 0, 0);
+      Capitulo6.Capitulo(NomeCapitulo6, TextoCapitulo6, Harry, -101, 0,ler);      
 
       /////// Capitulo 7
 
       String NomeCapitulo7 = "Trem mágico!";
-      String TextoCapitulo7 = "";
-      String[] escolhascap7 = new String[2];
-      escolhascap7[0] = "";
-      escolhascap7[1] = "";
+      String TextoCapitulo7 = "\nÓtimo, Harry já tem todo o seu material mágico consigo..."+
+                              "\nVocê embarca em um trem em direção a Hogwarts, ao andar pelos seus corredores"+
+                              "\nPercebe que há dois vagões... Um vagão parce está escuro e suas janelas estão"+
+                              "\nCom aparencia que congeladas, Harry acha estranho... No outro Vagão há uma menina"+
+                              "\ne um menino sentado em seus bancos. Em qual você deseja entrar?";          
       Capitulos Capitulo7 = new Capitulos();
-      Capitulo7.Capitulo(NomeCapitulo7, TextoCapitulo7, escolhascap7, Harry, 0, 0);
+      Capitulo7.Capitulo(NomeCapitulo7, TextoCapitulo7, Harry, 0, 0,ler);      
 
+      /////// Capitulo 8
 
-                               
+      String NomeCapitulo8 = "Inimigo inesperado";
+      String TextoCapitulo8 = "\nAo entrar no vagão escuro não demora muito tempo, um inimigo mágico aparece"+
+                              "\ne suga toda sua energia vital..."+
+                              "\nAparentemente você não teve muita sorte no mundo mágico.";
+      String[] escolhascap8 = new String[2];
+      escolhascap8[0] = "";
+      escolhascap8[1] = "";
+      Capitulos Capitulo8 = new Capitulos();
+      Capitulo8.Capitulo(NomeCapitulo8, TextoCapitulo8, Harry, -101, 0,ler);      
 
-    
+      /////// Capitulo 9
+
+      String NomeCapitulo9 = "Amigos inesperados";
+      String TextoCapitulo9 = "\nAo entrar no vagão que há pessoas você logo começa a conversar com elas"+
+                              "\ne conhece duas pessoas que vão lhe acompanhar pelo resto da jornada!"+
+                              "\n-Hermione Granger"+
+                              "\n-Ronald Weasley";              
+      Capitulos Capitulo9 = new Capitulos();
+      Capitulo9.Capitulo(NomeCapitulo9, TextoCapitulo9, Harry, +10, 0,ler);
+
+      //////// Escolhas
+
+      Capitulo0.escolhas.add(new Escolhas( "Sim", Capitulo1));
+      Capitulo0.escolhas.add(new Escolhas( "Não", null));
+      Capitulo1.escolhas.add(new Escolhas("Continuar morando com os tios", Capitulo3));
+      Capitulo1.escolhas.add(new Escolhas("Aceitar a proposta e ir embora",Capitulo2));
+      Capitulo2.escolhas.add(new Escolhas(null,Capitulo4));
+      Capitulo3.escolhas.add(new Escolhas("Ir atrás de Harold e voltar atrás na decisão de ir pra Hogwarts",Capitulo5)); 
+      Capitulo3.escolhas.add(new Escolhas("Ter medo de voltar atrás, e continuar com sua vida pacata.",Capitulo6));
+      Capitulo4.escolhas.add(new Escolhas(null,Capitulo7));
+      Capitulo5.escolhas.add(new Escolhas(null,Capitulo2));
+      Capitulo7.escolhas.add(new Escolhas("Entrar no vagão Frio e escuro",Capitulo8));
+      Capitulo7.escolhas.add(new Escolhas("Entrar no vagão que há pessoas.",Capitulo9));
+      Capitulo8.escolhas.add(new Escolhas(null,null));
+      Capitulo9.escolhas.add(new Escolhas(null,null));
+
+      ///// Capítulo Raiz
+
+      Capitulos raiz = Capitulo0;
+      
+      ///// Executando
+
+      raiz.mostrar();
         
 
 //         // Lendo o nome do usuário.
