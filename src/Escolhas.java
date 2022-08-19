@@ -5,8 +5,8 @@ public class Escolhas
     
     Escolhas(String texto, Capitulos próximo)
     {
-
-
+      this.texto = texto;
+      this.Próximo = próximo;
     }
     
     

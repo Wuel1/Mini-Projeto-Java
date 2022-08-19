@@ -38,7 +38,7 @@ public class Capitulos {
         this.personagem.alterarEnergia(this.alterarEnergia);
         this.personagem.alterarMagia(this.alterarMagia);
 
-        if(this.escolhas.size() > 0)
+        if(escolhas.size() > 0)
         {
             System.out.println("\n");    
             for (Escolhas escolhas : escolhas) 
@@ -51,7 +51,7 @@ public class Capitulos {
         
 
         
-      System.out.println("----------------------------------------------------------------------");
+      
 
     }
 
@@ -63,8 +63,10 @@ public class Capitulos {
         {
             while (escolha == -1)
             {
+                System.out.println("----------------------------------------------------------------------");
                 System.out.println("Digite sua escolha:");                         
-                String EscolhaDigitada = escaneador.nextLine();
+                String EscolhaDigitada = escaneador.nextLine();               
+
 
                 for(int i = 0; i < escolhas.size(); i++)
                 {
