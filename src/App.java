@@ -125,18 +125,18 @@ public class App {
       //////// Escolhas
 
       Capitulo0.escolhas.add(new Escolhas( "Sim", Capitulo1));
-      Capitulo0.escolhas.add(new Escolhas( "Não", null));
+      // Capitulo0.escolhas.add(new Escolhas( "Não", null));
       Capitulo1.escolhas.add(new Escolhas("Continuar morando com os tios", Capitulo3));
       Capitulo1.escolhas.add(new Escolhas("Aceitar a proposta e ir embora",Capitulo2));
-      Capitulo2.escolhas.add(new Escolhas(null,Capitulo4));
+      // Capitulo2.escolhas.add(new Escolhas(null,Capitulo4));
       Capitulo3.escolhas.add(new Escolhas("Ir atrás de Harold e voltar atrás na decisão de ir pra Hogwarts",Capitulo5)); 
       Capitulo3.escolhas.add(new Escolhas("Ter medo de voltar atrás, e continuar com sua vida pacata.",Capitulo6));
-      Capitulo4.escolhas.add(new Escolhas(null,Capitulo7));
-      Capitulo5.escolhas.add(new Escolhas(null,Capitulo2));
+      // Capitulo4.escolhas.add(new Escolhas(null,Capitulo7));
+      // Capitulo5.escolhas.add(new Escolhas(null,Capitulo2));
       Capitulo7.escolhas.add(new Escolhas("Entrar no vagão Frio e escuro",Capitulo8));
       Capitulo7.escolhas.add(new Escolhas("Entrar no vagão que há pessoas.",Capitulo9));
-      Capitulo8.escolhas.add(new Escolhas(null,null));
-      Capitulo9.escolhas.add(new Escolhas(null,null));
+      // Capitulo8.escolhas.add(new Escolhas(null,null));
+      // Capitulo9.escolhas.add(new Escolhas(null,null));
 
       ///// Capítulo Raiz
 
