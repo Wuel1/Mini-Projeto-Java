@@ -105,10 +105,7 @@ public class App {
       String NomeCapitulo8 = "Inimigo inesperado";
       String TextoCapitulo8 = "\nAo entrar no vagão escuro não demora muito tempo, um inimigo mágico aparece"+
                               "\ne suga toda sua energia vital..."+
-                              "\nAparentemente você não teve muita sorte no mundo mágico.";
-      String[] escolhascap8 = new String[2];
-      escolhascap8[0] = "";
-      escolhascap8[1] = "";
+                              "\nAparentemente você não teve muita sorte no mundo mágico.";      
       Capitulos Capitulo8 = new Capitulos();
       Capitulo8.Capitulo(NomeCapitulo8, TextoCapitulo8, Harry, -101, 0,ler);      
 
@@ -131,16 +128,16 @@ public class App {
       //////// Escolhas
 
       Capitulo0.escolhas.add(new Escolhas( "Sim", Capitulo1));
-      Capitulo01.escolhas.add(new Escolhas( "Não", Capitulo01));
+      Capitulo0.escolhas.add(new Escolhas( "Não", Capitulo01));
       Capitulo1.escolhas.add(new Escolhas("Continuar morando com os tios", Capitulo3));
-      Capitulo1.escolhas.add(new Escolhas("Aceitar a proposta e ir embora",Capitulo2));
-      Capitulo2.escolhas.add(new Escolhas("Continuar",Capitulo4));
+      Capitulo1.escolhas.add(new Escolhas("Aceitar a proposta e ir embora", Capitulo2));
+      Capitulo2.escolhas.add(new Escolhas("Continuar", Capitulo4));
       Capitulo3.escolhas.add(new Escolhas("Ir atrás de Harold", Capitulo5)); 
-      Capitulo3.escolhas.add(new Escolhas("Ter medo de voltar atrás",Capitulo6));
-      Capitulo4.escolhas.add(new Escolhas("Continuar",Capitulo7));
-      Capitulo5.escolhas.add(new Escolhas("Continuar",Capitulo2));
-      Capitulo7.escolhas.add(new Escolhas("Entrar no vagão Frio e escuro",Capitulo8));
-      Capitulo7.escolhas.add(new Escolhas("Entrar no vagão que há pessoas.",Capitulo9));
+      Capitulo3.escolhas.add(new Escolhas("Ter medo de voltar atrás", Capitulo6));
+      Capitulo4.escolhas.add(new Escolhas("Continuar", Capitulo7));
+      Capitulo5.escolhas.add(new Escolhas("Continuar", Capitulo2));
+      Capitulo7.escolhas.add(new Escolhas("Entrar no vagão Frio e escuro", Capitulo8));
+      Capitulo7.escolhas.add(new Escolhas("Entrar no vagão que há pessoas", Capitulo9));
       Capitulo8.escolhas.add(new Escolhas("Continuar",null));
       Capitulo9.escolhas.add(new Escolhas("Continuar",null));
 

@@ -47,11 +47,7 @@ public class Capitulos {
             }                       
             int escolha = escolher();
             this.escolhas.get(escolha).Próximo.mostrar();                       
-        }      
-
-        
-      
-
+        } 
     }
 
     int escolher()
