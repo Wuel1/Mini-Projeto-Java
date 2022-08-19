@@ -38,17 +38,16 @@ public class Capitulos {
         this.personagem.alterarEnergia(this.alterarEnergia);
         this.personagem.alterarMagia(this.alterarMagia);
 
-        if(escolhas.size() > 0)
+        if(this.escolhas.size() > 0)
         {
-            System.out.println("\n");    
+            System.out.println();    
             for (Escolhas escolhas : escolhas) 
             {
                 System.out.println("-" + escolhas.texto);    
             }                       
             int escolha = escolher();
             this.escolhas.get(escolha).Próximo.mostrar();                       
-        }
-        
+        }      
 
         
       
@@ -65,8 +64,7 @@ public class Capitulos {
             {
                 System.out.println("----------------------------------------------------------------------");
                 System.out.println("Digite sua escolha:");                         
-                String EscolhaDigitada = escaneador.nextLine();               
-
+                String EscolhaDigitada = escaneador.nextLine(); 
 
                 for(int i = 0; i < escolhas.size(); i++)
                 {
@@ -74,11 +72,13 @@ public class Capitulos {
                     {
                         escolha = i;
                     }
+                    
                 }
-                
+                System.out.println("Escolha uma opção válida...");
+                                
             }
+           
             
-            System.out.println();
         }   
      
      
