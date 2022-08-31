@@ -70,7 +70,10 @@ public class Capitulos {
                     }
                     
                 }
-                System.out.println("Escolha uma opção válida...");                             
+                if(escolha == -1)
+                {
+                    System.out.println("Escolha uma opção válida...");   
+                }                         
             }
                         
         }   
