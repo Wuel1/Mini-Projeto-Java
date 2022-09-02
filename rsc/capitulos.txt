@@ -129,3 +129,99 @@ VARIAÇÃO_ENERGIA:
 0
 VARIAÇÃO_MAGIA:
 0
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Boas-vindas !
+TEXTO:
+Sim
+CAPITULO DE DESTINO:
+Uma vida desprezível
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Boas-vindas !
+TEXTO:
+Nao
+CAPITULO DE DESTINO:
+Uma pena! Volte assim que poder!
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Uma vida desprezível
+TEXTO:
+Continuar morando com os tios
+CAPITULO DE DESTINO:
+Incerteza...
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Uma vida desprezível
+TEXTO:
+Aceitar a proposta e ir embora
+CAPITULO DE DESTINO:
+MAGIA!
+	       
+ESCOLHA
+CAPITULO DE ORIGEM:
+MAGIA! 
+TEXTO:
+Continuar
+CAPITULO DE DESTINO:
+Descobrindo a Magia !   
+      
+ESCOLHA
+CAPITULO DE ORIGEM:
+Incerteza...
+TEXTO:
+Ir atras de Harold
+CAPITULO DE DESTINO:
+Correndo atrás da mágia
+      
+ESCOLHA
+CAPITULO DE ORIGEM:
+Incerteza...
+TEXTO:
+Ter medo de voltar atras
+CAPITULO DE DESTINO:
+Medo
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Descobrindo a Magia !
+TEXTO:
+Continuar
+CAPITULO DE DESTINO:
+Trem mágico!
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Descobrindo a Magia !
+TEXTO:
+Continuar
+CAPITULO DE DESTINO:
+Trem mágico!
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Correndo atrás da mágia
+TEXTO:
+Continuar
+CAPITULO DE DESTINO:
+MAGIA!
+     
+ESCOLHA
+CAPITULO DE ORIGEM:
+Trem mágico!
+TEXTO:
+Entrar no vagao Frio e escuro
+CAPITULO DE DESTINO:
+Inimigo inesperado
+
+ESCOLHA
+CAPITULO DE ORIGEM:
+Trem mágico!
+TEXTO:
+Entrar no vagao que ha pessoas
+CAPITULO DE DESTINO:
+Amigos inesperados
