@@ -138,8 +138,8 @@ public class App {
       Capitulo5.escolhas.add(new Escolhas("Continuar", Capitulo2));
       Capitulo7.escolhas.add(new Escolhas("Entrar no vagao Frio e escuro", Capitulo8));
       Capitulo7.escolhas.add(new Escolhas("Entrar no vagao que ha pessoas", Capitulo9));
-      Capitulo8.escolhas.add(new Escolhas("Continuar",null));
-      Capitulo9.escolhas.add(new Escolhas("Continuar",null));
+      // Capitulo8.escolhas.add(new Escolhas("Continuar",null));
+      // Capitulo9.escolhas.add(new Escolhas("Continuar",null));
 
       ///// Capítulo Raiz
 
