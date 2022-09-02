@@ -1,3 +1,6 @@
+
+/////// CAPITULOS
+
 CAPITULO
 NOME:
 Boas-vindas !
@@ -130,6 +133,9 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 0
 
+/////// ESCOLHAS E CONEXÕES
+
+
 ESCOLHA
 CAPITULO DE ORIGEM:
 Boas-vindas !
@@ -164,11 +170,11 @@ MAGIA!
 	       
 ESCOLHA
 CAPITULO DE ORIGEM:
-MAGIA! 
+MAGIA!
 TEXTO:
 Continuar
 CAPITULO DE DESTINO:
-Descobrindo a Magia !   
+Descobrindo a Magia ! 
       
 ESCOLHA
 CAPITULO DE ORIGEM:
