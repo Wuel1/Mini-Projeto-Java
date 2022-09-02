@@ -1,4 +1,6 @@
+import java.util.HashMap;
 import java.util.Scanner;
+
 public class App {
     public static void main(String[] args)
     {
@@ -6,9 +8,12 @@ public class App {
       Scanner ler = new Scanner(System.in);
       //////// Personagens
 
-      Personagem Harry = new Personagem("Harry", 100, 0);
-    //  Personagem Hermione = new Personagem("Hermione", 100, 30);
-    //  Personagem Ronald = new Personagem("Ronald Weasley", 70, 0);
+      LeitorCarregador leitor = new LeitorCarregador();
+      HashMap<String, Personagem> personagens = leitor.lerpersonagens("\\rsc\\personagens.txt");
+
+      Personagem Harry = personagens.get("Harry");
+      Personagem Hermione = personagens.get("Hermione");
+      Personagem Ronald = personagens.get("Ronald");
 
       //////// Capítulo 0       
 
