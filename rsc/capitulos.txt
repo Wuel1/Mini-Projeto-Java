@@ -9,3 +9,123 @@ VARIAÇÃO_ENERGIA:
 0
 VARIAÇÃO_MAGIA:
 0
+
+CAPITULO
+NOME:
+Uma vida desprezível
+TEXTO:
+Você acaba de acordar em meio ao caos... Você mora com seus tios, entretanto a sua relação com eles não é nada boa. Você escuta barulho de vários papéis se atendo, e logo após os seus tios começam a gritar o seu nome em tom de enfurecimento... ~HARRY POTTEEER !!!! Você sai do quarto e já é puxado pela orelha pelo seu tio em direção a sala. Ao chegar na sala vocês dois tem uma surpresa... Um homem alto e forte está entrando Ele se chama Harold, ele veio lhe convidar pra fazer parte da escola de Bruxária de Hogwarts...
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+0
+VARIAÇÃO_MAGIA:
+0
+
+CAPITULO
+NOME:
+MAGIA!
+TEXTO:
+Você aceitou ir para Hogwarts com Harold!Porém, para isso você precisa ter o seu matérial mágico, não é mesmo? Vocês partem rumo a compra desses matériais... -Mas espera ai, eu não tenho dinheiro Harold... ~Disse Harry -Você que pensa Potter, você que pensa! Antes dos seus pais morrerem lhe deixaram uma grande quantidade de dinheiro no banco, e é lá que vamos agora! ~Harold
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+0
+VARIAÇÃO_MAGIA:
+10
+
+CAPITULO
+NOME:
+Incerteza...
+TEXTO:
+Você fica muito assustado com tudo isso que aconteceu, e em meio a incerteza Harry decide não aceitar a proposta e permanecer morando com os tios Porém algo ali mudou... Harry começa a sentir a magia fluir em suas veias, coisa que nunca sentiu antes Aliás... não sabia nem que existia! Certo dia no zoológico, ao olhar para uma cobra... ele começa a se comunicar com ela -Isso não é normal, preciso tomar uma decisão!  ~Disse Harry
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+-20
+VARIAÇÃO_MAGIA:
+0
+
+CAPITULO
+NOME:
+Descobrindo a Magia !
+TEXTO:
+Ao chegar no banco mágico você se depara com anões... Mas não anões normais Anões mágicos !!! Você se admira com a magia do banco, tudo é por meio de feitiços Até a fechadura do seu cofre... Sim, você tem cofre! Após capturar seu dinheiro no banco, você está pronto pra comprar todo o seu matérial !
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+0
+VARIAÇÃO_MAGIA:
+5
+
+CAPITULO
+NOME:
+Correndo atrás da mágia
+TEXTO:
+Você decidiu correr atrás do prejuízo !!! Maravilha!!! Harry manda uma carta pra Harold, e pouco tempo depois você recebe uma resposta... HArry vai poder ir pra Hogwats!!! Harry logo arruma suas malas, mesmo contra a vontade dos seus tios trouxas. Um carro mágico aparece em sua porta, e finalmente Harry vai embora da casa dos seus tios. MAGIA!
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+10
+VARIAÇÃO_MAGIA:
+5
+
+CAPITULO
+NOME:
+Medo
+TEXTO:
+Embora sentir presente em você, você tem medo de assumi-lá! Assim, Harry está fadado ao fracasso de nunca arriscar viver uma vida melhor e continuar vivendo com os tios... Infeliz, incapaz e inseguro... :(
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+-101
+VARIAÇÃO_MAGIA:
+0
+
+CAPITULO
+NOME:
+Trem mágico!
+TEXTO:
+Ótimo, Harry já tem todo o seu material mágico consigo... Você embarca em um trem em direção a Hogwarts, ao andar pelos seus corredores Percebe que há dois vagões... Um vagão parce está escuro e suas janelas estão Com aparencia que congeladas, Harry acha estranho... No outro Vagão há uma menina e um menino sentado em seus bancos. Em qual você deseja entrar?
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+0
+VARIAÇÃO_MAGIA:
+0
+
+CAPITULO
+NOME:
+Inimigo inesperado
+TEXTO:
+Ao entrar no vagão escuro não demora muito tempo, um inimigo mágico aparece e suga toda sua energia vital... Aparentemente você não teve muita sorte no mundo mágico."
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+-101
+VARIAÇÃO_MAGIA:
+0
+
+CAPITULO
+NOME:
+Amigos inesperados
+TEXTO:
+Ao entrar no vagão que há pessoas você logo começa a conversar com elas e conhece duas pessoas que vão lhe acompanhar pelo resto da jornada!-Hermione Granger -Ronald Weasley"
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+10
+VARIAÇÃO_MAGIA:
+5
+
+CAPITULO
+NOME:
+Uma pena! Volte assim que poder!
+TEXTO:
+
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+0
+VARIAÇÃO_MAGIA:
+0

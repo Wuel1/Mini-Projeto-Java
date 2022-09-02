@@ -1,4 +1,3 @@
-import java.security.DrbgParameters.Capability;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -20,22 +19,11 @@ public class App {
 
       //////// Capítulo 0 
           
-      Capitulos Capitulo0 = capitulos.get("Boas-vindas !");
-          
+      Capitulos Capitulo0 = capitulos.get("Boas-vindas !");          
 
       //////// Capítulo 1
       
-      String NomeCapitulo1 = "Uma vida desprezível";
-      String TextoCapitulo1 = "\nVocê acaba de acordar em meio ao caos... Você mora com seus tios, entretanto a sua relação"+
-                              "\ncom eles não é nada boa. Você escuta barulho de vários papéis se batendo, e logo após os seus"+
-                              "\ntios começam a gritar o seu nome em tom de enfurecimento..."+
-                              "\n\n~HARRY POTTEEER !!!!"+
-                              "\n\nVocê sai do quarto e já é puxado pela orelha pelo seu tio em direção a sala"+
-                              "\nAo chegar na sala vocês dois tem uma surpresa... Um homem alto e forte está entrando"+
-                              "\nEle se chama Harold, ele veio lhe convidar pra fazer parte da escola de Bruxária de"+
-                              "\nHogwarts...";        
-      Capitulos Capitulo1 = new Capitulos();
-      Capitulo1.Capitulo(NomeCapitulo1, TextoCapitulo1, Harry, 0, 0,ler);      
+      Capitulos Capitulo1 = capitulos.get("Uma vida desprezível");  
       
      //////// Capítulo 2
 
