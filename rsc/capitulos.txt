@@ -1,0 +1,11 @@
+CAPITULO
+NOME:
+Boas-vindas !
+TEXTO:
+Olá !! Seja bem vindo ao Mini Projeto ! Aqui você vai vai mergulhar em uma história de altas aventuras, o melhor... Você quem decide seu caminho! Deseja começar?
+PERSONAGEM:
+Harry
+VARIAÇÃO_ENERGIA:
+0
+VARIAÇÃO_MAGIA:
+0

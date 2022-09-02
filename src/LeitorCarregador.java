@@ -45,4 +45,49 @@ public class LeitorCarregador {
         return personagens;
     }
     
+    HashMap<String, Capitulos> lercapitulos(String caminhoCapitulos, HashMap<String, Personagem> personagens , Scanner ler){
+
+        HashMap<String, Capitulos> capitulos = new HashMap<String, Capitulos>();
+        File arquivoCapitulos = new File(caminhoCapitulos);  
+        
+        try 
+        {
+            Scanner lerArquivoCapitulos =  new Scanner(arquivoCapitulos,"UTF-8");
+            String linhaLida = "";
+            String nomeCapitulo = "";
+            String textoCapitulo = "";
+            String nomePersonagem = "";
+            int energiaVar = 0;
+            int magiaVar = 0;
+            
+            while(lerArquivoCapitulos.hasNextLine())
+            {
+                while(!linhaLida.equals("CAPITULO"))
+                {
+                    linhaLida = lerArquivoCapitulos.nextLine();
+                }    
+                linhaLida = lerArquivoCapitulos.nextLine(); //Nome:
+                nomeCapitulo = lerArquivoCapitulos.nextLine(); //Nome Capitulo
+                linhaLida = lerArquivoCapitulos.nextLine(); //Texto:
+                textoCapitulo = lerArquivoCapitulos.nextLine(); //Texto Capitulo
+                linhaLida = lerArquivoCapitulos.nextLine(); //Personagem:
+                nomePersonagem = lerArquivoCapitulos.nextLine(); //Personagem do Capitulo
+                linhaLida = lerArquivoCapitulos.nextLine(); //VARIAÇÃO_ENERGIA:
+                energiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Energia Personagem
+                linhaLida = lerArquivoCapitulos.nextLine(); //VARIAÇÃO_MAGIA:
+                magiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Magia Personagem 
+                Capitulos Cap = new Capitulos();
+                Cap.Capitulo(nomeCapitulo, textoCapitulo , personagens.get(nomePersonagem) , energiaVar , magiaVar , ler);
+                capitulos.put(nomeCapitulo, Cap);                
+            }
+
+            lerArquivoCapitulos.close();
+        } 
+        catch (FileNotFoundException exception)
+        {            
+            exception.printStackTrace();
+        }
+
+        return capitulos;
+    }
 }

@@ -13,11 +13,11 @@ public class Capitulos {
     Scanner escaneador;   
 
     void Capitulo(String nome,
-                    String texto,                                        
-                    Personagem personagem,
-                    int alterarEnergia,
-                    int alterarMagia,
-                    Scanner escaneador)
+                  String texto,                                        
+                  Personagem personagem,
+                  int alterarEnergia,
+                  int alterarMagia,
+                  Scanner escaneador)
     {
 
         this.nome = nome;

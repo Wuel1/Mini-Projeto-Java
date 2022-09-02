@@ -1,3 +1,4 @@
+import java.security.DrbgParameters.Capability;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -9,21 +10,18 @@ public class App {
       //////// Personagens
 
       LeitorCarregador leitor = new LeitorCarregador();
-      HashMap<String, Personagem> personagens = leitor.lerpersonagens("\\rsc\\personagens.txt");
+      HashMap<String, Personagem> personagens = leitor.lerpersonagens("rsc\\personagens.txt");
 
       Personagem Harry = personagens.get("Harry");
-      Personagem Hermione = personagens.get("Hermione");
-      Personagem Ronald = personagens.get("Ronald");
+      // Personagem Hermione = personagens.get("Hermione");
+      // Personagem Ronald = personagens.get("Ronald");
 
-      //////// Capítulo 0       
+      HashMap<String, Capitulos> capitulos = leitor.lercapitulos("rsc\\capitulos.txt", personagens, ler);
 
-      String NomeCapitulo0 = "Boas-vindas !";
-      String MensagemInicial = "\nOlá !! Seja bem vindo ao Mini Projeto !"+
-                               "\nAqui você vai vai mergulhar em uma história de altas aventuras,"+
-                               "\ne o melhor... Você quem decide seu caminho!"+
-                               "\n\nDeseja começar?";            
-      Capitulos Capitulo0 = new Capitulos();
-      Capitulo0.Capitulo(NomeCapitulo0,MensagemInicial,Harry,0,0,ler);      
+      //////// Capítulo 0 
+          
+      Capitulos Capitulo0 = capitulos.get("Boas-vindas !");
+          
 
       //////// Capítulo 1
       
