@@ -44,7 +44,7 @@ public class App {
                               "\n\n-Você que pensa Potter, você que pensa! Antes dos seus pais morrerem"+
                               "\nlhe deixaram uma grande quantidade de dinheiro no banco, e é lá que vamos agora! ~Harold";      
       Capitulos Capitulo2 = new Capitulos();
-      Capitulo2.Capitulo(NomeCapitulo2, TextoCapitulo2, Harry, 0, 0,ler);       
+      Capitulo2.Capitulo(NomeCapitulo2, TextoCapitulo2, Harry, 0, 10,ler);       
 
       /////// Capitulo 3
 
@@ -57,7 +57,7 @@ public class App {
                               "\n\nCerto dia no zoológico, ao olhar para uma cobra... ele começa a se comunicar com ela"+
                               "\n\n-Isso não é normal, preciso tomar uma decisão!  ~Disse Harry";            
       Capitulos Capitulo3 = new Capitulos();
-      Capitulo3.Capitulo(NomeCapitulo3, TextoCapitulo3, Harry , 0, 0,ler);
+      Capitulo3.Capitulo(NomeCapitulo3, TextoCapitulo3, Harry , -20, 0,ler);
 
       /////// Capitulo 4
 
@@ -67,7 +67,7 @@ public class App {
                                "\nAté a fechadura do seu cofre... Sim, você tem cofre!"+
                                "\n\nApós capturar seu dinheiro no banco, você está pronto pra comprar todo o seu matérial !";       
        Capitulos Capitulo4 = new Capitulos();
-       Capitulo4.Capitulo(NomeCapitulo4, TextoCapitulo4, Harry, 0, 0,ler);      
+       Capitulo4.Capitulo(NomeCapitulo4, TextoCapitulo4, Harry, 0, 5,ler);      
 
       /////// Capitulo 5
 
@@ -78,7 +78,7 @@ public class App {
                               "\ndos seus tios trouxas. Um carro mágico aparece em sua porta, e finalmente Harry vai embora"+
                               "\nDa casa dos seus tios. MAGIA!";      
       Capitulos Capitulo5 = new Capitulos();
-      Capitulo5.Capitulo(NomeCapitulo5, TextoCapitulo5, Harry, 0, 0,ler);     
+      Capitulo5.Capitulo(NomeCapitulo5, TextoCapitulo5, Harry, 10, 5,ler);     
 
       /////// Capitulo 6
 
@@ -117,7 +117,7 @@ public class App {
                               "\n-Hermione Granger"+
                               "\n-Ronald Weasley";              
       Capitulos Capitulo9 = new Capitulos();
-      Capitulo9.Capitulo(NomeCapitulo9, TextoCapitulo9, Harry, +10, 0,ler);
+      Capitulo9.Capitulo(NomeCapitulo9, TextoCapitulo9, Harry, +10, 5,ler);
 
       /////// Capitulo -1
       String NomeCapitulo01 = "Uma pena! Volte assim que poder!";

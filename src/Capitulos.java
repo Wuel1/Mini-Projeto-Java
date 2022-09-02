@@ -32,12 +32,13 @@ public class Capitulos {
 
     void mostrar()
     {
-      System.out.println("----------------------------------------------------------------------");
-        System.out.println(this.nome);
-        System.out.println(this.texto);      
+       
         this.personagem.alterarEnergia(this.alterarEnergia);
         this.personagem.alterarMagia(this.alterarMagia);
-
+        System.out.println("----------------------------------------------------------------------");     
+        System.out.println(this.nome);
+        System.out.println(this.texto);      
+        
         if(this.escolhas.size() > 0)
         {
             System.out.println();    
@@ -59,7 +60,8 @@ public class Capitulos {
             while (escolha == -1)
             {
                 System.out.println("----------------------------------------------------------------------");
-                System.out.println("Digite sua escolha:");                         
+                System.out.println("Digite sua escolha:");  
+                System.out.print("-");                       
                 String EscolhaDigitada = escaneador.nextLine(); 
 
                 for(int i = 0; i < escolhas.size(); i++)
