@@ -135,7 +135,6 @@ VARIAÇÃO_MAGIA:
 
 /////// ESCOLHAS E CONEXÕES
 
-
 ESCOLHA
 CAPITULO DE ORIGEM:
 Boas-vindas !
@@ -174,7 +173,7 @@ MAGIA!
 TEXTO:
 Continuar
 CAPITULO DE DESTINO:
-Descobrindo a Magia ! 
+Descobrindo a Magia !
       
 ESCOLHA
 CAPITULO DE ORIGEM:
