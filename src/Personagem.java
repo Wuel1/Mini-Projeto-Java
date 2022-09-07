@@ -1,16 +1,16 @@
 public class Personagem {
-    String nome;
-    int energia;
-    int magia;
+    private String nome;
+    private int energia;
+    private int magia;
 
-    Personagem(String nome, int energia, int magia)
+    public Personagem(String nome, int energia, int magia)
     {
         this.nome = nome;
         this.energia = energia;
         this.magia = magia;
     }
 
-    void alterarEnergia(int alteração)
+    public void alterarEnergia(int alteração)
     {
         if(alteração != 0){
 
@@ -37,7 +37,7 @@ public class Personagem {
         }
 
     }
-    void alterarMagia(int alteração)
+    public void alterarMagia(int alteração)
     {
         if(alteração != 0){
             this.magia = this.magia + alteração;        

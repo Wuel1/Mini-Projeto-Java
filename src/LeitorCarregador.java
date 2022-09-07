@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class LeitorCarregador {
 
-    HashMap<String,Personagem> lerpersonagens(String caminhoPersonagens){
+    public HashMap<String,Personagem> lerpersonagens(String caminhoPersonagens){
 
         HashMap<String, Personagem> personagens = new HashMap<String, Personagem>();
         File arquivoPersonagens = new File(caminhoPersonagens);  
@@ -45,7 +45,7 @@ public class LeitorCarregador {
         return personagens;
     }
     
-    HashMap<String, Capitulos> lercapitulos(String caminhoCapitulos, HashMap<String, Personagem> personagens , Scanner ler){
+    public HashMap<String, Capitulos> lercapitulos(String caminhoCapitulos, HashMap<String, Personagem> personagens , Scanner ler){
 
         HashMap<String, Capitulos> capitulos = new HashMap<String, Capitulos>();
         File arquivoCapitulos = new File(caminhoCapitulos);  
@@ -97,7 +97,7 @@ public class LeitorCarregador {
                     cap_destino = lerArquivoCapitulos.nextLine(); // Nome capitulo destino;                    
                     Capitulos capituloOrigem = capitulos.get(cap_Origem);                    
                     Capitulos capituloDestino = capitulos.get(cap_destino);
-                    capituloOrigem.escolhas.add(new Escolhas(escolha,capituloDestino));
+                    capituloOrigem.adicionarEscolha(new Escolhas(escolha,capituloDestino));
                     linhaLida = "";
                 }               
             }
