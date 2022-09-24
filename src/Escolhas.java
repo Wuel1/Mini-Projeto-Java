@@ -19,5 +19,3 @@ public class Escolhas
       return this.Próximo;
     }
 }
-    
-

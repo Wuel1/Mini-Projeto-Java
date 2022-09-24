@@ -54,15 +54,7 @@ public class LeitorCarregador {
         {
             Scanner lerArquivoCapitulos =  new Scanner(arquivoCapitulos,"UTF-8");
             String linhaLida = "";
-            String nomeCapitulo = "";
-            String textoCapitulo = "";
-            String nomePersonagem = "";
-            int energiaVar = 0;
-            int magiaVar = 0;
-            String cap_Origem = "";
-            String escolha = ""; 
-            String cap_destino = "";
-            
+
             while(lerArquivoCapitulos.hasNextLine())
             {
                 while(!linhaLida.equals("CAPITULO") &&
@@ -72,32 +64,12 @@ public class LeitorCarregador {
                 }
                 if(linhaLida.equals("CAPITULO"))
                 {
-                    linhaLida = lerArquivoCapitulos.nextLine(); //Nome:
-                    nomeCapitulo = lerArquivoCapitulos.nextLine(); //Nome Capitulo
-                    linhaLida = lerArquivoCapitulos.nextLine(); //Texto:
-                    textoCapitulo = lerArquivoCapitulos.nextLine(); //Texto Capitulo
-                    linhaLida = lerArquivoCapitulos.nextLine(); //Personagem:
-                    nomePersonagem = lerArquivoCapitulos.nextLine(); //Personagem do Capitulo
-                    linhaLida = lerArquivoCapitulos.nextLine(); //VARIAÇÃO_ENERGIA:
-                    energiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Energia Personagem
-                    linhaLida = lerArquivoCapitulos.nextLine(); //VARIAÇÃO_MAGIA:
-                    magiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Magia Personagem 
-                    Capitulos Cap = new Capitulos();
-                    Cap.Capitulo(nomeCapitulo, textoCapitulo , personagens.get(nomePersonagem) , energiaVar , magiaVar , ler);
-                    capitulos.put(nomeCapitulo, Cap);
-                    linhaLida = "";
+                    lercapitulo(personagens, ler, capitulos, lerArquivoCapitulos);
+                    linhaLida = ""; 
                 }
                 else if(linhaLida.equals("ESCOLHA"))
                 {
-                    linhaLida = lerArquivoCapitulos.nextLine(); // CAPITULO DE ORIGEM:
-                    cap_Origem = lerArquivoCapitulos.nextLine(); // Nome capitulo origem;
-                    linhaLida = lerArquivoCapitulos.nextLine(); // TEXTO DA ESCOLHA
-                    escolha = lerArquivoCapitulos.nextLine(); // Escolha
-                    linhaLida = lerArquivoCapitulos.nextLine(); // CAPITULO DE DESTINO:
-                    cap_destino = lerArquivoCapitulos.nextLine(); // Nome capitulo destino;                    
-                    Capitulos capituloOrigem = capitulos.get(cap_Origem);                    
-                    Capitulos capituloDestino = capitulos.get(cap_destino);
-                    capituloOrigem.adicionarEscolha(new Escolhas(escolha,capituloDestino));
+                    lerEscolha(personagens, ler, capitulos, lerArquivoCapitulos);
                     linhaLida = "";
                 }               
             }
@@ -110,5 +82,48 @@ public class LeitorCarregador {
         }
 
         return capitulos;
+    }
+    
+    private void lercapitulo(HashMap<String,Personagem> personagens,
+                             Scanner ler,
+                             HashMap<String,Capitulos> capitulos,
+                             Scanner lerArquivoCapitulos){                               
+        String nomeCapitulo = "";
+        String textoCapitulo = "";
+        String nomePersonagem = "";
+        int energiaVar = 0;
+        int magiaVar = 0;        
+        lerArquivoCapitulos.nextLine();
+        nomeCapitulo = lerArquivoCapitulos.nextLine(); //Nome Capitulo
+        lerArquivoCapitulos.nextLine();
+        textoCapitulo = lerArquivoCapitulos.nextLine(); //Texto Capitulo
+        lerArquivoCapitulos.nextLine();
+        nomePersonagem = lerArquivoCapitulos.nextLine(); //Personagem do Capitulo
+        lerArquivoCapitulos.nextLine();
+        energiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Energia Personagem
+        lerArquivoCapitulos.nextLine();
+        magiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Magia Personagem 
+        Capitulos Cap = new Capitulos();
+        Cap.Capitulo(nomeCapitulo, textoCapitulo , personagens.get(nomePersonagem) , energiaVar , magiaVar , ler);
+        capitulos.put(nomeCapitulo, Cap);               
+    }
+
+    private void lerEscolha(HashMap<String,Personagem> personagens,
+                            Scanner ler,
+                            HashMap<String,Capitulos> capitulos,
+                            Scanner lerArquivoCapitulos){   
+        String cap_Origem = "";
+        String escolha = ""; 
+        String cap_destino = "";
+
+         lerArquivoCapitulos.nextLine(); // CAPITULO DE ORIGEM:
+         cap_Origem = lerArquivoCapitulos.nextLine(); // Nome capitulo origem;
+         lerArquivoCapitulos.nextLine(); // TEXTO DA ESCOLHA
+         escolha = lerArquivoCapitulos.nextLine(); // Escolha
+         lerArquivoCapitulos.nextLine(); // CAPITULO DE DESTINO:
+         cap_destino = lerArquivoCapitulos.nextLine(); // Nome capitulo destino;                    
+         Capitulos capituloOrigem = capitulos.get(cap_Origem);                    
+         Capitulos capituloDestino = capitulos.get(cap_destino);
+         capituloOrigem.adicionarEscolha(new Escolhas(escolha,capituloDestino));         
     }
 }

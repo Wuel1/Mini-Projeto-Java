@@ -201,14 +201,6 @@ Trem mágico!
 
 ESCOLHA
 CAPITULO DE ORIGEM:
-Descobrindo a Magia !
-TEXTO:
-Continuar
-CAPITULO DE DESTINO:
-Trem mágico!
-
-ESCOLHA
-CAPITULO DE ORIGEM:
 Correndo atrás da mágia
 TEXTO:
 Continuar
