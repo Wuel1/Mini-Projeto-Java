@@ -1,6 +1,15 @@
 /////// CAPITULOS
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+ ###                                            ##                 ###                       ##
+  ##                                                                ##                      ####
+  ##       ####    ##  ##            ##  ##    ###     #####        ##    ####              ####
+  #####   ##  ##   #######           ##  ##     ##     ##  ##    #####   ##  ##              ##
+  ##  ##  ######   ## # ##           ##  ##     ##     ##  ##   ##  ##   ##  ##              ##
+  ##  ##  ##       ##   ##            ####      ##     ##  ##   ##  ##   ##  ##
+ ######    #####   ##   ##             ##      ####    ##  ##    ######   ####               ##
+FIM_DA_IMAGEM
 NOME:
 Boas-vindas !
 TEXTO:
@@ -12,7 +21,11 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 0
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+
+FIM_DA_IMAGEM
 NOME:
 Uma vida desprezível
 TEXTO:
@@ -24,7 +37,11 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 0
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+
+FIM_DA_IMAGEM
 NOME:
 MAGIA!
 TEXTO:
@@ -48,7 +65,11 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 0
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+
+FIM_DA_IMAGEM
 NOME:
 Descobrindo a Magia !
 TEXTO:
@@ -72,7 +93,11 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 5
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+
+FIM_DA_IMAGEM
 NOME:
 Medo
 TEXTO:
@@ -84,7 +109,11 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 0
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+
+FIM_DA_IMAGEM
 NOME:
 Trem mágico!
 TEXTO:
@@ -96,7 +125,11 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 0
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+
+FIM_DA_IMAGEM
 NOME:
 Inimigo inesperado
 TEXTO:
@@ -108,7 +141,11 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 0
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+
+FIM_DA_IMAGEM
 NOME:
 Amigos inesperados
 TEXTO:

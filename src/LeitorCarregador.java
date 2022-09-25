@@ -57,10 +57,22 @@ public class LeitorCarregador {
 
             while(lerArquivoCapitulos.hasNextLine())
             {
-                while(!linhaLida.equals("CAPITULO") &&
+                while(!linhaLida.equals("CAPITULO_COM_IMAGEM") &&
+                      !linhaLida.equals("CAPITULO") &&
                       !linhaLida.equals("ESCOLHA"))
                 {
                     linhaLida = lerArquivoCapitulos.nextLine();
+                }
+                if(linhaLida.equals("CAPITULO_COM_IMAGEM"))
+                {                    
+                    CapituloImagem Cap = new CapituloImagem(personagens,
+                                                            ler,
+                                                            capitulos,
+                                                            lerArquivoCapitulos);  
+
+                    capitulos.put(Cap.getnome(), Cap);
+
+                    linhaLida = "";
                 }
                 if(linhaLida.equals("CAPITULO"))
                 {                    

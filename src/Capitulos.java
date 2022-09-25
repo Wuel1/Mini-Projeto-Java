@@ -7,11 +7,13 @@ import java.util.Scanner;
 public class Capitulos {
     private String nome;
     private String texto;
-    private ArrayList<Escolhas> escolhas;    
+    protected ArrayList<Escolhas> escolhas;    
     private Personagem personagem;
     private int alterarEnergia;
     private int alterarMagia;
-    private Scanner escaneador;   
+    private Scanner escaneador;
+    
+    protected Capitulos() {}
 
     public Capitulos(HashMap<String, Personagem> personagens,
                      Scanner ler, HashMap<String, Capitulos> capitulos,
@@ -91,8 +93,8 @@ public class Capitulos {
 
         return escolha;
     }
-            
-    private void lercapitulo(HashMap<String,Personagem> personagens,
+
+    protected void lercapitulo(HashMap<String,Personagem> personagens,
                              Scanner ler,                             
                              Scanner lerArquivoCapitulos){                            
         
