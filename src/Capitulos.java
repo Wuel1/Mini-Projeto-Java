@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 //import java.util.Scanner;
@@ -11,6 +12,14 @@ public class Capitulos {
     private int alterarEnergia;
     private int alterarMagia;
     private Scanner escaneador;   
+
+    public Capitulos(HashMap<String, Personagem> personagens,
+                     Scanner ler, HashMap<String, Capitulos> capitulos,
+                    Scanner lerArquivoCapitulos)
+    {
+        this.lercapitulo(personagens, ler, lerArquivoCapitulos);
+        this.escolhas = new ArrayList<>();
+    }
 
     public void Capitulo(String nome,
                           String texto,                                        
@@ -82,10 +91,47 @@ public class Capitulos {
 
         return escolha;
     }
+            
+    private void lercapitulo(HashMap<String,Personagem> personagens,
+                             Scanner ler,                             
+                             Scanner lerArquivoCapitulos){                            
+        
+        this.escaneador = ler;
+        lerArquivoCapitulos.nextLine();
+        this.nome = lerArquivoCapitulos.nextLine(); //Nome Capitulo
+        lerArquivoCapitulos.nextLine();
+        this.texto = lerArquivoCapitulos.nextLine(); //Texto Capitulo
+        lerArquivoCapitulos.nextLine();
+        this.personagem = personagens.get(lerArquivoCapitulos.nextLine()); //Personagem do Capitulo
+        lerArquivoCapitulos.nextLine();
+        this.alterarEnergia = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Energia Personagem
+        lerArquivoCapitulos.nextLine();
+        this.alterarMagia = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Magia Personagem                     
+    }
   
     public void adicionarEscolha(Escolhas Escolha)
     {
         this.escolhas.add(Escolha);
+    }
+
+    public String getnome() {
+        return this.nome;
+    }
+
+    public String gettexto() {
+        return this.texto;
+    }
+
+    public Object getPersonagem(){        
+        return this.personagem;
+    }
+
+    public int getEnergiaVar() {
+        return this.alterarEnergia;
+    }
+
+    public int getMagiaVar() {
+        return this.alterarMagia;
     }
 
 }

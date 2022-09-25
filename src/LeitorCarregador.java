@@ -63,9 +63,13 @@ public class LeitorCarregador {
                     linhaLida = lerArquivoCapitulos.nextLine();
                 }
                 if(linhaLida.equals("CAPITULO"))
-                {
-                    lercapitulo(personagens, ler, capitulos, lerArquivoCapitulos);
-                    linhaLida = ""; 
+                {                    
+                    Capitulos Cap = new Capitulos(personagens,
+                                                  ler,
+                                                  capitulos,
+                                                  lerArquivoCapitulos);                    
+                    capitulos.put(Cap.getnome(), Cap);
+                    linhaLida = "";
                 }
                 else if(linhaLida.equals("ESCOLHA"))
                 {
@@ -83,30 +87,7 @@ public class LeitorCarregador {
 
         return capitulos;
     }
-    
-    private void lercapitulo(HashMap<String,Personagem> personagens,
-                             Scanner ler,
-                             HashMap<String,Capitulos> capitulos,
-                             Scanner lerArquivoCapitulos){                               
-        String nomeCapitulo = "";
-        String textoCapitulo = "";
-        String nomePersonagem = "";
-        int energiaVar = 0;
-        int magiaVar = 0;        
-        lerArquivoCapitulos.nextLine();
-        nomeCapitulo = lerArquivoCapitulos.nextLine(); //Nome Capitulo
-        lerArquivoCapitulos.nextLine();
-        textoCapitulo = lerArquivoCapitulos.nextLine(); //Texto Capitulo
-        lerArquivoCapitulos.nextLine();
-        nomePersonagem = lerArquivoCapitulos.nextLine(); //Personagem do Capitulo
-        lerArquivoCapitulos.nextLine();
-        energiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Energia Personagem
-        lerArquivoCapitulos.nextLine();
-        magiaVar = Integer.parseInt(lerArquivoCapitulos.nextLine()); // Magia Personagem 
-        Capitulos Cap = new Capitulos();
-        Cap.Capitulo(nomeCapitulo, textoCapitulo , personagens.get(nomePersonagem) , energiaVar , magiaVar , ler);
-        capitulos.put(nomeCapitulo, Cap);               
-    }
+
 
     private void lerEscolha(HashMap<String,Personagem> personagens,
                             Scanner ler,
