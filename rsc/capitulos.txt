@@ -23,13 +23,25 @@ VARIAÇÃO_MAGIA:
 
 CAPITULO_COM_IMAGEM
 IMAGEM:
-
-
+      /b_,dM\__,_
+    _/MMMMMMMMMMMm,
+   _YMMMMMMMMMMMM(
+  `MMMMMM/   /   \   _   ,    
+   MMM|  __  / __/  ( |_|
+   YMM/_/# \__/# \    | |arry
+   (.   \__/  \__/     ___  
+     )       _,  |    '_|_)
+_____/\     _   /       | otter
+    \  `._____,'
+     `..___(__
+              ``-.
+                  \
+                   )
 FIM_DA_IMAGEM
 NOME:
 Uma vida desprezível
 TEXTO:
-Você acaba de acordar em meio ao caos... Você mora com seus tios, entretanto a sua relação com eles não é nada boa. Você escuta barulho de vários papéis se atendo, e logo após os seus tios começam a gritar o seu nome em tom de enfurecimento... ~HARRY POTTEEER !!!! Você sai do quarto e já é puxado pela orelha pelo seu tio em direção a sala. Ao chegar na sala vocês dois tem uma surpresa... Um homem alto e forte está entrando Ele se chama Harold, ele veio lhe convidar pra fazer parte da escola de Bruxária de Hogwarts...
+Você acaba de acordar em meio ao caos... Você mora com seus tios, entretanto a sua relação com eles não é nada boa. Você escuta barulho de vários papéis se atendo, e logo após os seus tios começam a gritar o seu nome em tom de enfurecimento... ~HARRY POTTEEER !!!! Você sai do quarto e já é puxado pela orelha pelo seu tio em direção a sala. Ao chegar na sala vocês dois tem uma surpresa... Um homem alto e forte está entrando Ele se chama Hagrid, ele veio lhe convidar pra fazer parte da escola de Bruxária de Hogwarts...
 PERSONAGEM:
 Harry
 VARIAÇÃO_ENERGIA:
@@ -39,13 +51,16 @@ VARIAÇÃO_MAGIA:
 
 CAPITULO_COM_IMAGEM
 IMAGEM:
-
-
+            .-..-. .--.  .--. .-.   .-. .--. .---. .-----. .--. .-.
+            : :; :: ,. :: .--': :.-.: :: .; :: .; :`-. .-': .--': :
+            :    :: :: :: : _ : :: :: ::    ::   .'  : :  `. `. : :
+            : :: :: :; :: :; :: `' `' ;: :: :: :.`.  : :   _`, ::_;
+            :_;:_;`.__.'`.__.' `.,`.,' :_;:_;:_;:_;  :_;  `.__.':_;
 FIM_DA_IMAGEM
 NOME:
 MAGIA!
 TEXTO:
-Você aceitou ir para Hogwarts com Harold!Porém, para isso você precisa ter o seu matérial mágico, não é mesmo? Vocês partem rumo a compra desses matériais... -Mas espera ai, eu não tenho dinheiro Harold... ~Disse Harry -Você que pensa Potter, você que pensa! Antes dos seus pais morrerem lhe deixaram uma grande quantidade de dinheiro no banco, e é lá que vamos agora! ~Harold
+Você aceitou ir para Hogwarts com Hagrid!Porém, para isso você precisa ter o seu matérial mágico, não é mesmo? Vocês partem rumo a compra desses matériais... -Mas espera ai, eu não tenho dinheiro Hagrid... ~Disse Harry -Você que pensa Potter, você que pensa! Antes dos seus pais morrerem lhe deixaram uma grande quantidade de dinheiro no banco, e é lá que vamos agora! ~Hagrid
 PERSONAGEM:
 Harry
 VARIAÇÃO_ENERGIA:
@@ -67,8 +82,23 @@ VARIAÇÃO_MAGIA:
 
 CAPITULO_COM_IMAGEM
 IMAGEM:
-
-
+   _____
+  /     \
+/- (*) |*)\
+|/\.  _>/\|
+    \__/    |\
+   _| |_   \-/
+  /|\__|\  //
+ |/|   |\\//
+ |||   | ~'
+ ||| __|
+ /_\| ||
+ \_/| ||
+   |7 |7
+   || ||
+   || ||
+   /\ \ \  fog
+  ^^^^ ^^^
 FIM_DA_IMAGEM
 NOME:
 Descobrindo a Magia !
@@ -81,11 +111,19 @@ VARIAÇÃO_ENERGIA:
 VARIAÇÃO_MAGIA:
 5
 
-CAPITULO
+CAPITULO_COM_IMAGEM
+IMAGEM:
+
+            .-..-. .--.  .--. .-.   .-. .--. .---. .-----. .--. .-.
+            : :; :: ,. :: .--': :.-.: :: .; :: .; :`-. .-': .--': :
+            :    :: :: :: : _ : :: :: ::    ::   .'  : :  `. `. : :
+            : :: :: :; :: :; :: `' `' ;: :: :: :.`.  : :   _`, ::_;
+            :_;:_;`.__.'`.__.' `.,`.,' :_;:_;:_;:_;  :_;  `.__.':_;
+FIM_DA_IMAGEM
 NOME:
 Correndo atrás da mágia
 TEXTO:
-Você decidiu correr atrás do prejuízo !!! Maravilha!!! Harry manda uma carta pra Harold, e pouco tempo depois você recebe uma resposta... HArry vai poder ir pra Hogwats!!! Harry logo arruma suas malas, mesmo contra a vontade dos seus tios trouxas. Um carro mágico aparece em sua porta, e finalmente Harry vai embora da casa dos seus tios. MAGIA!
+Você decidiu correr atrás do prejuízo !!! Maravilha!!! Harry manda uma carta pra Hagrid, e pouco tempo depois você recebe uma resposta... Harry vai poder ir pra Hogwats!!! Harry logo arruma suas malas, mesmo contra a vontade dos seus tios trouxas. Um carro mágico aparece em sua porta, e finalmente Harry vai embora da casa dos seus tios. MAGIA!
 PERSONAGEM:
 Harry
 VARIAÇÃO_ENERGIA:
@@ -96,6 +134,7 @@ VARIAÇÃO_MAGIA:
 CAPITULO_COM_IMAGEM
 IMAGEM:
 
+¯\_(⊙︿⊙)_/¯
 
 FIM_DA_IMAGEM
 NOME:
@@ -111,8 +150,21 @@ VARIAÇÃO_MAGIA:
 
 CAPITULO_COM_IMAGEM
 IMAGEM:
-
-
+         ,/////\\,
+       ,///////\\\\\
+     ,//////   > \\\\
+     ////  __ `   _\\
+     //__//  \--//  \
+     /'--\\_O/  \\_O/
+     \_         \   |
+       \      ,__>  /
+       |\   ,____  /
+       | \   \__| /
+       |  '._____/
+       |      |
+     /``"--._ \/`\
+    /        \|  /`--.
+  /```""--..__;.'     `\
 FIM_DA_IMAGEM
 NOME:
 Trem mágico!
@@ -128,7 +180,11 @@ VARIAÇÃO_MAGIA:
 CAPITULO_COM_IMAGEM
 IMAGEM:
 
-
+                .---. .---.  .--.  .--.  .--.     .---.     .-.
+                : .; :: .; :: .--': .--': .--'    : .--'    : :
+                :  _.':   .': `;  `. `. `. `.     : `;      : :
+                : :   : :.`.: :__  _`, : _`, :    : :       :_;
+                :_;   :_;:_;`.__.'`.__.'`.__.'    :_;       :_;
 FIM_DA_IMAGEM
 NOME:
 Inimigo inesperado
@@ -143,8 +199,18 @@ VARIAÇÃO_MAGIA:
 
 CAPITULO_COM_IMAGEM
 IMAGEM:
-
-
+        ___                             | '  \
+   ___  \ /  ___         ,'\_           | .-. \        /|
+   \ /  | |,'__ \  ,'\_  |   \          | | | |      ,' |_   /|
+ _ | |  | |\/  \ \ |   \ | |\_|    _    | |_| |   _ '-. .-',' |_   _
+// | |  | |____| | | |\_|| |__    //    |     | ,'_`. | | '-. .-',' `. ,'\_
+\\_| |_,' .-, _  | | |   | |\ \  //    .| |\_/ | / \ || |   | | / |\  \|   \
+ `-. .-'| |/ / | | | |   | | \ \//     |  |    | | | || |   | | | |_\ || |\_|
+   | |  | || \_| | | |   /_\  \ /      | |`    | | | || |   | | | .---'| |
+   | |  | |\___,_\ /_\ _      //       | |     | \_/ || |   | | | |  /\| |
+   /_\  | |           //_____//       .||`  _   `._,' | |   | | \ `-' /| |
+        /_\           `------'        \ |              `.\  | |  `._,' /_\
+                                       \|                 `.\
 FIM_DA_IMAGEM
 NOME:
 Amigos inesperados
